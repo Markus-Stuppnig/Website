@@ -29,9 +29,9 @@ export default function Footer() {
           <small className="pb-2 block text-xs">
             &copy; { currentYear } Markus Stuppnig. All rights reserved.
               </small>
-          <Link href="mailto:markus@stuppnig.net" className="pb-2 block text-xs">
+          <Link href="mailto:markus@stuppnig.net" className="pb-2 block text-xs underline">
                 markus@stuppnig.net
-              </Link>
+          </Link>
         </div>
       </footer>
     </>

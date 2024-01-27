@@ -4,10 +4,11 @@ import React from "react";
 import "react-vertical-timeline-component/style.min.css";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { Experience } from "./experienceData";
 
 
 
-export default function ExperienceCard({title, location, description, index}: {title: string, location: string, description: string, index: number}) {
+export default function ExperienceCard({experience, index}: {experience: Experience, index: number}) {
 
   const [ref, inView] = useInView({
 		triggerOnce: true, // Change this to false if you want the animation to trigger again whenever it comes in view
@@ -22,7 +23,7 @@ export default function ExperienceCard({title, location, description, index}: {t
 		  opacity: 1,
 		  x: 0,
 		  transition: {
-			delay: 0.5,
+			delay: 0.2,
 		  },
 		},
 	  };
@@ -36,11 +37,16 @@ export default function ExperienceCard({title, location, description, index}: {t
 		animate={inView ? "animate" : "initial"}
 		custom={index}
 	>
-		<h3 className="font-semibold capitalize">{title}</h3>
-		<p className="font-normal !mt-0">{location}</p>
-		<p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
-			{description}
-		</p>
+		<h3 className="font-semibold capitalize">{experience.title}</h3>
+		<p className="font-normal !mt-0">{experience.location}</p>
+		{experience.description.map((line: string, index: number) => (
+			<React.Fragment key={index}>
+				<p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+					{line}
+				</p>
+				{index !== experience.description.length - 1 && <br />}
+			</React.Fragment>
+		))}
 	</motion.div>
   );
 }

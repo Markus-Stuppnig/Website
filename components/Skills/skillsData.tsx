@@ -1,10 +1,16 @@
 export const skillsData = [
-  "Cloud Technologies",
+  "Cloud Computing",
   "Cyber Security",
+  "Incident Response",
   "Relational Databases",
+  "Software as a Service (SaaS)",
   "AWS",
   "Python",
   "Java",
   "Git",
+  "BitBucket",
+  "GitLab",
+  "Rest",
+  "Docker",
   "Jira",
 ] as const;

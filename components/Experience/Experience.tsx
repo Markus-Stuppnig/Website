@@ -13,9 +13,9 @@ import ExperienceCard from "./ExperienceCard";
 export default function Experience() {
   
   return (
-    <section id="experience" className="mt-[5rem]">
+    <div>
       <SectionHeading>My experience</SectionHeading>
-      <VerticalTimeline lineColor="#f5cb4c" animate={true}>
+      <VerticalTimeline lineColor="#eee" animate={true}>
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
@@ -29,7 +29,7 @@ export default function Experience() {
                 borderRadius: "20px",
               }}
               contentArrowStyle={{
-                borderRight:"0.4rem solid #9ca3af",
+                borderRight: "0.6rem solid rgba(250, 250, 250, 0.7)",
               }}
               date={item.date}
               icon={item.icon}
@@ -38,11 +38,11 @@ export default function Experience() {
                 fontSize: "1.5rem",
               }}
             >
-              <ExperienceCard title={item.title} location={item.location} description={item.description} index={index} />
+              <ExperienceCard experience={item} index={index} />
             </VerticalTimelineElement>
           </React.Fragment>
         ))}
       </VerticalTimeline>
-    </section>
+    </div>
   );
 }

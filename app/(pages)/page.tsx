@@ -1,12 +1,12 @@
 import SectionDivider from "@/components/-General/SectionDivider";
 import Experience from "@/components/Experience/Experience";
-import Intro from "@/components/Intro/Intro";
 import Skills from "@/components/Skills/Skills";
+import About from "@/components/About/About";
 
 export default function Home() {
   return (
-    <main className="mt-10 relative">
-      <Intro />
+    <main className="mt-10">
+      <About />
       <SectionDivider />
       <Skills />
       <SectionDivider />

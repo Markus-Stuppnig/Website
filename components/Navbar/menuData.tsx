@@ -16,6 +16,11 @@ const menuData: Menu[] = [
     newTab: false,
     path: "/journeys"
   },
+  {
+    title: "Grades & Certificates",
+    newTab: false,
+    path: "/certificates"
+  },
 ];
 
 export default menuData;
