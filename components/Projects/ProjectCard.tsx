@@ -9,19 +9,6 @@ import { motion } from "framer-motion";
 
 export default function ProjectCard({project, indexOfProject}: {project: Project, indexOfProject: number}) {
 
-	const div = document.getElementById(`div${indexOfProject}`);
-	if(div) {
-		console.log("found");
-		div.addEventListener('mouseenter', function() {
-			div.style.setProperty('--is-hovered', 'true');
-			console.log("enter");
-		});
-		div.addEventListener('mouseleave', function() {
-			div.style.setProperty('--is-hovered', 'false');
-		});
-	}
-
-
   return (
 	<section id={"project" + indexOfProject} className="mt-[5rem]">
 		<div className="flex flex-col justify-center items-center w-full">

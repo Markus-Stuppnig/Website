@@ -5,5 +5,5 @@ export default function Home() {
     <main className="mt-10 relative">
 	    <Projects />
     </main>
-  );
+  )
 }
