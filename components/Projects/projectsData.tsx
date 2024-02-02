@@ -31,7 +31,7 @@ export const projectsData: Project[] = [
     links: [
       "https://github.com/Markus-Stuppnig/FileIOPlus",
     ],
-    progress: 32,
+    progress: 100,
     incentive: [
       "This was one of my first, if not the first project I coded. I had a lot of fun back then."
     ]

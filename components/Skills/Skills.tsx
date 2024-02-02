@@ -9,6 +9,7 @@ import { useInView } from "react-intersection-observer";
 const fadeInAnimationVariants = {
   initial: {
     opacity: 0,
+	scale: 1,
     y: 100,
   },
   animate: (index: number) => ({
@@ -43,10 +44,13 @@ export default function Skills() {
 						key={index}
 						variants={fadeInAnimationVariants}
 						initial="initial"
+						whileHover={{ scale: 1.05 }}
 						animate={inView ? "animate" : "initial"}
 						custom={index}
+						transition={{ duration: 0.3 }}
+						viewport={{ once: false }}
 					>
-						{skill}
+							{skill}
 					</motion.li>
 					))}
 				</ul>
