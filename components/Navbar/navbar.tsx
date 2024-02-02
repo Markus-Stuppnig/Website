@@ -16,22 +16,34 @@ const Header = () => {
         <div className="container mx-auto px-4 h-full">
           <div className="flex justify-between items-center h-full">
 
-			    <p>Markus Stuppnig</p>
+            <motion.div
+              initial={{ scale: 1 }}
+              whileHover={{ scale: 1.04 }}
+              transition={{ duration: 0.06 }}
+            >
+			        <p>Markus Stuppnig</p>
+            </motion.div>
 
             <nav>
               <ul className="hidden md:flex gap-5 lg:gap-10">
                 {menuData.map((menuItem, key) => (
                   <li key={key}>
-                    <Link
-                      href={`${menuItem.path}`}
-                      className={
-                        pathUrl === menuItem.path
-                          ? "hover:text-primary text-primary"
-                          : "hover:text-primary"
-                      }
+                    <motion.div
+                      initial={{ scale: 1 }}
+				              whileHover={{ scale: 1.04 }}
+				              transition={{ duration: 0.06 }}
                     >
-                      {menuItem.title}
-                    </Link>
+                      <Link
+                        href={`${menuItem.path}`}
+                        className={
+                          pathUrl === menuItem.path
+                            ? "hover:text-primary text-primary"
+                            : "hover:text-primary"
+                        }
+                      >
+                        {menuItem.title}
+                      </Link>
+                    </motion.div>
                   </li>
                 ))}
               </ul>
