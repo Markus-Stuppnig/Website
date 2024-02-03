@@ -22,9 +22,7 @@ export default function JourneySection({journey, indexOfJourney}: {journey: Jour
 					<SectionHeading>
 						{journey.title}
 					</SectionHeading>
-					<p>
-						{journey.description}
-					</p>
+					<p className="text-lg" dangerouslySetInnerHTML={{ __html: journey.description }} />
 				</div>
 			</div>
 		</div>

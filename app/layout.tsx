@@ -16,7 +16,7 @@ export default function RootLayout({
 
   return (
     <html lang="en" className='scroll-smooth overflow-scroll' style={{scrollBehavior:'smooth'}}>
-      <body>
+      <body style={{background: "url('svgviewer-output.svg') no-repeat center center fixed", backgroundSize: 'cover'}}>
         <Navbar />
         <div className="overflow-x-hidden">
           <div className={`${inter.className} bg-gray-50 text-gray-950 pt-28 sm:pt-36`}>

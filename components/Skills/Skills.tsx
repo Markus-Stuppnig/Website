@@ -47,7 +47,7 @@ export default function Skills() {
 						whileHover={{ scale: 1.05 }}
 						animate={inView ? "animate" : "initial"}
 						custom={index}
-						transition={{ duration: 0.3 }}
+						transition={{ duration: 0.1 }}
 						viewport={{ once: false }}
 					>
 							{skill}
