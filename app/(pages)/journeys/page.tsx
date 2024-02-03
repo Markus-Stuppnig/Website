@@ -1,12 +1,10 @@
-import SectionDivider from "@/components/-General/SectionDivider";
-import SectionHeading from "@/components/-General/SectionHeading";
+import Journeys from "@/components/Journeys/Journeys";
 
-export default function Home() {
+export default function JourneysPage() {
+
   return (
     <main className="mt-10 relative">
-	    <SectionHeading>This page is about who I am as a person</SectionHeading>
-      <SectionDivider />
-      <p>dsajf a</p>
+	    <Journeys />
     </main>
-  )
+  );
 }
