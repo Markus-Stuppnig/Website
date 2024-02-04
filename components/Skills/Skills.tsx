@@ -44,7 +44,7 @@ export default function Skills() {
 						key={index}
 						variants={fadeInAnimationVariants}
 						initial="initial"
-						whileHover={{ scale: 1.05 }}
+						whileHover={{ scale: 1.04 }}
 						animate={inView ? "animate" : "initial"}
 						custom={index}
 						transition={{ duration: 0.1 }}

@@ -6,19 +6,19 @@ import JourneySection from "./JourneySection";
 
 export default function Journeys() {
   return (
-	<section id="projects" className="mt-[5rem]">
+	<section id="projects" className="mt-[5rem] flex flex-col">
 		<div className="flex justify-center w-full">
-      		<div className="flex flex-col justify-start w-full md:w-1/3 text-center">
+      		<div className="flex flex-col w-full text-center">
 				<SectionHeading>Journeys</SectionHeading>
 				<p>This page is about my life</p>
 				<p>Work in Progress</p>
 			</div>
 		</div>
-		<div>
+		<div className="flex flex-col h-full">
 			{journeysData.map((item, index) => (
 				<React.Fragment key={index}>
 					<JourneySection journey={item} indexOfJourney={index} />
-					<SectionDivider />
+					<SectionDivider height="h-[1rem]" />
 				</React.Fragment>
 			))}
 		</div>

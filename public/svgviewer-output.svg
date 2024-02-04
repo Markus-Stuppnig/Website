@@ -7,7 +7,7 @@
   </defs>
 
   <!-- Apply the filter to the circle -->
-  <ellipse cx="400" cy="300" rx="300" ry="150" fill="#0084ff" filter="url(#blur-2xl)" />
+  <ellipse cx="400" cy="300" rx="300" ry="80" fill="#0084ff" filter="url(#blur-2xl)" />
 
   <ellipse cx="300" cy="500" rx="200" ry="80" fill="#4c00ff" filter="url(#blur-2xl)" />
 

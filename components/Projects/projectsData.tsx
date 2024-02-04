@@ -68,4 +68,6 @@ export const projectsData: Project[] = [
   //     "In the beginning of 2023 I deeply looked into Windows and its security vulnerabilities."
   //   ]
   // },
+  //Schengen-Borders-Information-Scraper
+  //Promodoro Logger
 ] as const;

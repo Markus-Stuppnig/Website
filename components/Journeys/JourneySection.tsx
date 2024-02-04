@@ -1,9 +1,7 @@
 "use client";
 
 import React from "react";
-import { FcCheckmark } from "react-icons/fc";
 import Image from 'next/image'
-import { motion } from "framer-motion";
 import { Journey } from "./journeysData";
 import SectionHeading from "../-General/SectionHeading";
 
@@ -11,14 +9,14 @@ export default function JourneySection({journey, indexOfJourney}: {journey: Jour
 
   return (
 	<section id={"project" + indexOfJourney} className="mt-[5rem]">
-		<div className="flex flex-row justify-center items-center w-full h-[30rem]">
-			<div className="w-full md:w-1/2 h-full">
-				<div className="m-[2rem] ml-[10rem]">
-					<Image width={500} height={10000} src={journey.imagePath} alt="Image of Project" className="rounded-2xl shadow-2xl" />
+		<div className="flex sm:flex-col md:flex-row justify-center items-center w-full">
+			<div className="w-2/3 md:w-1/3 flex justify-center">
+				<div className={`${journey.margin}`}>
+					<Image width={journey.width} height={journey.height} src={journey.imagePath} alt={`Title image of Journey ${journey.title}`} className="rounded-2xl shadow-2xl" />
 				</div>
 			</div>
-			<div className="w-full md:w-1/2">
-				<div className="flex flex-col justify-start items-start m-[2rem] h-full">
+			<div className="w-full md:w-2/3 flex justify-center items-center md:justify-start md:items-start mt-[5rem] md:mt-[0rem]">
+				<div className="flex flex-col md:ml-[5rem] w-2/3 md:justify-start md:items-start text-center md:text-start">
 					<SectionHeading>
 						{journey.title}
 					</SectionHeading>
