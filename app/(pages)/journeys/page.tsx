@@ -1,3 +1,4 @@
+import SectionDivider from "@/components/-General/SectionDivider";
 import Journeys from "@/components/Journeys/Journeys";
 
 export default function JourneysPage() {

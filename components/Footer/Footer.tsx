@@ -19,10 +19,9 @@ export default function Footer() {
 
   return (
     <>
-      <SectionDivider />
       <footer className="pt-10 pb-10 px-4 text-center text-gray-500 w-full flex justify-center shadow-2xl">
         
-        <div className="flex items-center justify-between w-1/2">
+        <div className="flex items-center justify-between w-5/6 lg:w-2/3">
           <small className="pb-2 block text-xs">
             Wexstraße 19-23, 1200 Vienna
               </small>

@@ -19,7 +19,7 @@ export default function ProjectCard({project, indexOfProject}: {project: Project
 					whileHover={{ scale: 1.05 }}
 					transition={{ duration: 0.3 }}
 					viewport={{ once: false }}
-					className="flex flex-col items-center justify-center w-full md:w-1/2 bg-white rounded-3xl shadow-xl hover:shadow-2xl md:backdrop-filter md:backdrop-blur-lg md:bg-opacity-10 hover:md:bg-opacity-20"
+					className="flex flex-col items-center justify-center w-5/6 md:w-[45rem] bg-white rounded-3xl shadow-xl hover:shadow-2xl backdrop-filter backdrop-blur-lg bg-opacity-10 hover:bg-opacity-20"
 				>
 					<Link href={project.link} target="_blank" className="flex flex-col items-center justify-center">
 						<div className="flex flex-row text-center mt-10">
