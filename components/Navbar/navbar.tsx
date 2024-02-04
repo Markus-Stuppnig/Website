@@ -12,7 +12,7 @@ const Header = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="z-[9999] w-full h-20 bg-white sticky top-0 md:backdrop-filter md:backdrop-blur-lg md:bg-opacity-80 shadow">
+    <div className="z-[9999] w-full h-20 bg-white sticky top-0 backdrop-filter backdrop-blur-lg bg-opacity-60 shadow">
         <div className="container mx-auto px-4 h-full">
           <div className="flex justify-between items-center h-full">
 

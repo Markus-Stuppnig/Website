@@ -16,7 +16,7 @@ export default function JourneySection({journey, indexOfJourney}: {journey: Jour
 				</div>
 			</div>
 			<div className="w-full md:w-2/3 flex justify-center items-center md:justify-start md:items-start mt-[5rem] md:mt-[0rem]">
-				<div className="flex flex-col md:ml-[5rem] w-2/3 md:justify-start md:items-start text-center md:text-start">
+				<div className="flex flex-col md:ml-[5rem] w-5/6 md:w-2/3 md:justify-start md:items-start text-start">
 					<SectionHeading>
 						{journey.title}
 					</SectionHeading>

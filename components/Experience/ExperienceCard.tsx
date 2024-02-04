@@ -29,14 +29,15 @@ export default function ExperienceCard({experience, index}: {experience: Experie
 	  };
   
   return (
-	<motion.div
-		ref={ref}
-		key={index}
-		variants={fadeInAnimationVariants}
-		initial="initial"
-		animate={inView ? "animate" : "initial"}
-		custom={index}
-	>
+	// <motion.div
+	// 	ref={ref}
+	// 	key={index}
+	// 	variants={fadeInAnimationVariants}
+	// 	initial="initial"
+	// 	animate={inView ? "animate" : "initial"}
+	// 	custom={index}
+	// >
+	<div>
 		<h3 className="font-semibold capitalize">{experience.title}</h3>
 		<p className="font-normal !mt-0">{experience.location}</p>
 		{experience.description.map((line: string, index: number) => (
@@ -47,6 +48,6 @@ export default function ExperienceCard({experience, index}: {experience: Experie
 				{index !== experience.description.length - 1 && <br />}
 			</React.Fragment>
 		))}
-	</motion.div>
+	</div>
   );
 }

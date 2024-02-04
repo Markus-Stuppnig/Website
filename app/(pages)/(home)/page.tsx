@@ -5,7 +5,7 @@ import About from "@/components/About/About";
 
 export default function Home() {
   return (
-    <main className="mt-10">
+    <main className="mt-1 sm:mt-10">
       <About />
       <SectionDivider />
       <Skills />
