@@ -9,7 +9,7 @@ export default function JourneySection({journey, indexOfJourney}: {journey: Jour
 
   return (
 	<section id={"project" + indexOfJourney} className="mt-[5rem]">
-		<div className="flex sm:flex-col md:flex-row justify-center items-center w-full">
+		<div className="flex flex-col md:flex-row justify-center items-center w-full">
 			<div className="w-2/3 md:w-1/3 flex justify-center">
 				<div className={`${journey.margin}`}>
 					<Image width={journey.width} height={journey.height} src={journey.imagePath} alt={`Title image of Journey ${journey.title}`} className="rounded-2xl shadow-2xl" />
