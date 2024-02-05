@@ -33,7 +33,7 @@ export default function ProjectCard({project, indexOfProject}: {project: Project
 						<div className="mt-10 ml-10 mr-10 mb-7">
 							{project.description.map((line: string, index: number) => (
 								<React.Fragment key={index}>
-									<p>{line}</p>
+									<p className="font-medium md:font-normal">{line}</p>
 									{index !== project.description.length - 1 && <br />}
 								</React.Fragment>
 							))}

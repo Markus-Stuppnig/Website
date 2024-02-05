@@ -40,7 +40,7 @@ export default function Skills() {
 					{skillsData.map((skill, index) => (
 					<motion.li
 						ref={ref}
-						className="bg-white rounded-xl px-3 md:px-5 py-3 shadow-xl backdrop-filter backdrop-blur-lg bg-opacity-40"
+						className="bg-white font-medium rounded-xl px-3 md:px-5 py-3 shadow-xl backdrop-filter backdrop-blur-lg bg-opacity-40"
 						key={index}
 						variants={fadeInAnimationVariants}
 						initial="initial"

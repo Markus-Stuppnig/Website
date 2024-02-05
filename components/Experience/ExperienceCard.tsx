@@ -38,11 +38,11 @@ export default function ExperienceCard({experience, index}: {experience: Experie
 	// 	custom={index}
 	// >
 	<div>
-		<h3 className="font-semibold capitalize">{experience.title}</h3>
-		<p className="font-normal !mt-0">{experience.location}</p>
+		<h3 className="!font-semibold">{experience.title}</h3>
+		<p className="!font-medium !mt-0">{experience.location}</p>
 		{experience.description.map((line: string, index: number) => (
 			<React.Fragment key={index}>
-				<p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+				<p className="!mt-1 md:!font-normal !font-medium !font-lg !md:font-base">
 					{line}
 				</p>
 				{index !== experience.description.length - 1 && <br />}
