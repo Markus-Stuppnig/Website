@@ -1,9 +1,11 @@
+import SectionDivider from "@/components/-General/SectionDivider";
 import Contact from "@/components/Contact/Contact";
 
 export default function Home() {
   return (
-    <main className="mt-10">
+    <main>
       <Contact />
+      <SectionDivider height="h-[1px]" />
     </main>
   );
 }
