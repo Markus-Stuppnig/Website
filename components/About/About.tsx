@@ -9,8 +9,8 @@ export default function About() {
     <section id="about" className="flex justify-center w-full">
       <div className="flex flex-col justify-start w-5/6 md:w-1/3 text-center">
         <SectionHeading>About Me</SectionHeading>
-        <p className="text-lg">I’m Markus, a young and driven cyber defense specialist with a passion for IT, cloud architecture, and cyber security. From the age of 12, I’ve been immersed in coding and technology, fueling my desire to make a positive impact in the field.</p>
-        <p className="text-lg mt-10">I plan to use this website as my personal portfolio showingcasing some of my projects and personal life.</p>
+        <p className="text-lg">I’m Markus, a young, driven and passionate full-stack developer. I am particularly expertised in cloud architecture, cyber security and recently data science as well.</p>
+        <p className="text-lg mt-10">I plan to use this website as my personal portfolio, please keep in mind that this website is still in progress.</p>
       </div>
     </section>
   );
