@@ -34,7 +34,7 @@ export const journeysData: Journey[] = [
 	{
 		title: "Computer science",
 		description: [
-			"Another thing I am really passionate about is developing software solutions and solving problems. As you can see <a href='https://informatikolympiade.at/rankings/2024/qualifikationsrunde-1.html' target='_blank'>here</a> I am 14<sup>th</sup> place in first qualification of the austrian computer science olympiad and I am invited to one week of studying algorithms at viennas best technical univerisity, TU Wien. The next competition will start after this week.",
+			"Another thing I am really passionate about is developing software solutions and solving problems. As you can see <a href='https://informatikolympiade.at/rankings/2024/qualifikationsrunde-1.html' target='_blank'>here</a> I am 14<sup>th</sup> place in first qualification of the austrian computer science olympiad and I am invited to one week of studying algorithms at viennas best technical univerisity, TU Wien. The next competition will start after this week.<br /><br />Explore some of my projects on <a href='https://github.com/Markus-Stuppnig' target='_blank'>my GitHub account!</a>",
 		],
 		imagePath: "/img3.png",
 		link: "www.google.com",
