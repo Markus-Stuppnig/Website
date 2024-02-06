@@ -17,9 +17,9 @@ const menuData: Menu[] = [
     path: "/journeys"
   },
   {
-    title: "Grades & Certificates",
+    title: "Honors & Awards",
     newTab: false,
-    path: "/certificates"
+    path: "/honors"
   },
 ];
 

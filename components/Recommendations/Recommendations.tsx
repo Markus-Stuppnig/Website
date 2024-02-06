@@ -18,7 +18,7 @@ export default function Recommendations() {
 			<SectionDivider height="h-[1rem] md:h-[4rem]" />
 
 			{recommendationsData.map((recommendation, index) => (
-				<div className="flex flex-col items-center justify-center w-5/6 md:w-[45rem] bg-white rounded-3xl shadow-xl backdrop-filter backdrop-blur-lg bg-opacity-30">
+				<div className="flex flex-col items-center justify-center w-5/6 md:w-[60rem] bg-white rounded-3xl shadow-xl backdrop-filter backdrop-blur-lg bg-opacity-30">
 					<div className="flex flex-col pl-10">
 						<Link href={recommendation.person.link} target="_blank" className="flex flex-row mt-10 align-middle">
 							<div>
