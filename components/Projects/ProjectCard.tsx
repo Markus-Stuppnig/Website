@@ -16,8 +16,8 @@ export default function ProjectCard({project, indexOfProject}: {project: Project
 				<motion.div
 					id={"div" + indexOfProject}
 					initial={{ scale: 1 }}
-					whileHover={{ scale: 1.05 }}
-					transition={{ duration: 0.3 }}
+					whileHover={{ scale: 1.02 }}
+					transition={{ duration: 0.1 }}
 					viewport={{ once: false }}
 					className="flex flex-col items-center justify-center w-5/6 md:w-[45rem] bg-white rounded-3xl shadow-xl hover:shadow-2xl backdrop-filter backdrop-blur-lg bg-opacity-10 hover:bg-opacity-20"
 				>
@@ -27,7 +27,7 @@ export default function ProjectCard({project, indexOfProject}: {project: Project
 							<h1 className="text-2xl font-normal ml-5">v{project.latestVersion}</h1>
 						</div>
 						<div className="flex flex-row w-11/12 mt-5">
-							<Progressbar number={project.progress} colorDone="#ccf" colorNot="#eee" height="[5rem]" opacityDone="50" opacityNot="40" />
+							<Progressbar number={project.progress} colorDone="#ccf" colorNot="#eee" height="[2rem]" opacityDone="50" opacityNot="40" />
 							{project.progress == 100 && <FcCheckmark className="ml-2" size={20} />}
 						</div>
 						<div className="mt-10 ml-10 mr-10 mb-7">

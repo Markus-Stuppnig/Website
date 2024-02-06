@@ -18,7 +18,7 @@ export default function Journeys() {
 			{journeysData.map((item, index) => (
 				<React.Fragment key={index}>
 					<JourneySection journey={item} indexOfJourney={index} />
-					<SectionDivider height="h-[1rem]" />
+					<SectionDivider height="h-[15rem]" />
 				</React.Fragment>
 			))}
 		</div>
