@@ -1,0 +1,29 @@
+<svg width="1000" height="600" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <filter id="blur-2xl" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur stdDeviation="100" />
+    </filter>
+  </defs>
+
+  <!--blue-->
+  <ellipse cx="400" cy="50" rx="300" ry="80" fill="#0084ff" filter="url(#blur-2xl)" />
+
+  <!--purple-->
+  <ellipse cx="200" cy="300" rx="70" ry="70" fill="#4c00ff" filter="url(#blur-2xl)" />
+
+  <!--pink-->
+  <ellipse cx="100" cy="580" rx="130" ry="130" fill="#dd99ff" filter="url(#blur-2xl)" />
+
+  <!--green-->
+  <ellipse cx="900" cy="480" rx="200" ry="80" fill="#34ff45" filter="url(#blur-2xl)" />
+
+  <!--yellow - green-->
+  <ellipse cx="900" cy="200" rx="200" ry="80" fill="#64eb34" filter="url(#blur-2xl)" />
+
+  <!--mid aqua-->
+  <ellipse cx="580" cy="270" rx="220" ry="110" fill="#7de3ff" filter="url(#blur-2xl)" />
+
+  <!--lower center-->
+  <ellipse cx="500" cy="530" rx="200" ry="80" fill="#7dffaa" filter="url(#blur-2xl)" />
+</svg>
