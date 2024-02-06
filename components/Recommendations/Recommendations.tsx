@@ -2,7 +2,6 @@
 
 import React from "react";
 import SectionHeading from "../-General/SectionHeading";
-import { motion } from "framer-motion";
 import { recommendationsData } from "./recommendationsData";
 import Image from "next/image";
 import Link from "next/link";
