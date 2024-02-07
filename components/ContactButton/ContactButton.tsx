@@ -6,9 +6,11 @@ const ContactButton = () => {
 		<div className="flex">
 			<Link
 				href="/contact"
-				className="flex gap-6 items-center justify-center bg-black hover:bg-primaryho ease-in-out duration-300 text-white text-regular rounded-full py-2.5 px-7.5"
+				className="flex items-center border border-primary border-2 hover:border-secondary justify-center text-primary bg-transparent hover:bg-secondary hover:text-white ease-in-out duration-300 rounded-full"
 			>
-			Contact
+				<p className="rounded-full py-3 px-6">
+					Say Hello 👋
+				</p>
 			</Link>
 		</div>
 	);

@@ -2,11 +2,6 @@ import { Menu } from "@/components/Navbar/Menu";
 
 const menuData: Menu[] = [
   {
-    title: "Home",
-    newTab: false,
-    path: "/"
-  },
-  {
     title: "Projects",
     newTab: false,
     path: "/projects"
@@ -17,9 +12,9 @@ const menuData: Menu[] = [
     path: "/journeys"
   },
   {
-    title: "Honors & Awards",
+    title: "Awards",
     newTab: false,
-    path: "/honors"
+    path: "/awards"
   },
 ];
 

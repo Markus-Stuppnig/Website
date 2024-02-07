@@ -3,9 +3,8 @@ import Contact from "@/components/Contact/Contact";
 
 export default function Home() {
   return (
-    <main>
+    <main className="h-screen">
       <Contact />
-      <SectionDivider height="h-[1px]" />
     </main>
   );
 }

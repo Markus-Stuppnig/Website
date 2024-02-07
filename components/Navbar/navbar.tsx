@@ -7,21 +7,38 @@ import menuData from "./menuData";
 import { motion, AnimatePresence } from "framer-motion";
 import ContactUsButton from "@/components/ContactButton/ContactButton";
 
+const zoomScale = 1.04;
+const zoomDuration = 0.06;
+
+const navbarItemsDefault = "text-primary"
+const navbarItemsSelected = "text-secondary"
+const navbarItemsSelectedOnHover = "hover:text-secondary"
+const navbarFontWeight = "font-semibold";
+
 const Header = () => {
   const pathUrl = usePathname();
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="z-[9999] w-full h-20 bg-white sticky top-0 backdrop-filter backdrop-blur-lg bg-opacity-60 shadow">
+    <div className="z-[9999] w-full h-25">
         <div className="container mx-auto px-4 h-full">
-          <div className="flex justify-between items-center h-full">
+          <div className="flex justify-between items-center h-full text-xl">
 
             <motion.div
               initial={{ scale: 1 }}
-              whileHover={{ scale: 1.04 }}
-              transition={{ duration: 0.06 }}
+              whileHover={{ scale: zoomScale }}
+              transition={{ duration: zoomDuration }}
             >
-			        <p>Markus Stuppnig</p>
+			        <Link 
+                href="/"
+                className={
+                  pathUrl === "/"
+                    ? `${navbarItemsSelected} ${navbarFontWeight} px-2 py-2`
+                    : `${navbarItemsDefault} ${navbarItemsSelectedOnHover} ${navbarFontWeight} px-2 py-2`
+                }
+              >
+                Markus Stuppnig
+              </Link>
             </motion.div>
 
             <nav>
@@ -30,15 +47,15 @@ const Header = () => {
                   <li key={key}>
                     <motion.div
                       initial={{ scale: 1 }}
-				              whileHover={{ scale: 1.04 }}
-				              transition={{ duration: 0.06 }}
+				              whileHover={{ scale: zoomScale }}
+				              transition={{ duration: zoomDuration }}
                     >
                       <Link
                         href={`${menuItem.path}`}
                         className={
                           pathUrl === menuItem.path
-                            ? "hover:text-primary text-primary"
-                            : "hover:text-primary"
+                            ? `${navbarFontWeight} ${navbarItemsSelected} px-2 py-2`
+                            : `${navbarFontWeight} ${navbarItemsDefault} ${navbarItemsSelectedOnHover} px-2 py-2`
                         }
                       >
                         {menuItem.title}
@@ -113,8 +130,8 @@ const Header = () => {
                           href={`${menuItem.path}`}
                           className={
                             pathUrl === menuItem.path
-                              ? "hover:text-primary text-primary"
-                              : "hover:text-primary"
+                              ? `${navbarFontWeight} ${navbarItemsSelected}`
+                              : `${navbarFontWeight} ${navbarItemsDefault} ${navbarItemsSelectedOnHover}`
                           }
                         >
                           {menuItem.title}

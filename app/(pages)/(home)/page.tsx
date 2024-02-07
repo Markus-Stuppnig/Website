@@ -3,12 +3,13 @@ import Experience from "@/components/Experience/Experience";
 import Skills from "@/components/Skills/Skills";
 import About from "@/components/About/About";
 import Recommendations from "@/components/Recommendations/Recommendations";
+import Introduction from "@/components/Introduction/Introduction";
 
 export default function Home() {
   return (
-    <main className="mt-1 sm:mt-10">
+    <main>
       <About />
-      <SectionDivider />
+      <Introduction />
       <Skills />
       <SectionDivider />
       <Experience />
