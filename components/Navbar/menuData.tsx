@@ -11,11 +11,11 @@ const menuData: Menu[] = [
     newTab: false,
     path: "/journeys"
   },
-  {
-    title: "Awards",
-    newTab: false,
-    path: "/awards"
-  },
+  // {
+  //   title: "Awards",
+  //   newTab: false,
+  //   path: "/awards"
+  // },
 ];
 
 export default menuData;
