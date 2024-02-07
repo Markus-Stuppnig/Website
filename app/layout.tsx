@@ -4,6 +4,7 @@ import "./globals.css";
 import { Rubik } from "next/font/google";
 import Navbar from "@/components/Navbar/navbar";
 import Footer from "@/components/Footer/Footer";
+import { Analytics } from "@vercel/analytics/react";
 
 const myFont = Rubik({ subsets: ['latin']});
 
@@ -19,6 +20,7 @@ export default function RootLayout({
         <div className="overflow-x-hidden bg-white">
           <Navbar />
           {children}
+          <Analytics />
           <Footer />
         </div>
       </body>
