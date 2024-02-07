@@ -1,6 +1,6 @@
 export interface Project {
   title: string;
-  description: string[];
+  description: string;
   projectDone: boolean;
   startDate: Date;
   endDate?: Date;
@@ -22,9 +22,7 @@ export interface Contributor {
 export const projectsData: Project[] = [
   {
     title: "FileIOPlus",
-    description: [
-      "FileIOPlus is a Java library designed to simplify file input/output operations. It provides convenient methods and mechanism for setting, storing and retrieving key-value pairs within a text file.",
-    ],
+    description: "FileIOPlus is a Java library designed to simplify file input/output operations. It provides convenient methods and mechanism for setting, storing and retrieving key-value pairs within a text file.",
     projectDone: true,
     startDate: new Date("2020-12-0T00:00:00.000Z"),
     latestVersion: "1.0",
@@ -36,11 +34,7 @@ export const projectsData: Project[] = [
   },
   {
     title: "Phanto",
-    description: [
-      "Phanto is a utility that specializes in UAC bypass and privilege escalation, enabling it to bypass User Account Control on Windows 10 and 11 systems and attain Administrator privileges.",
-      "In the absence of administrative privileges, Phanto.exe attempts to elevate its own permissions by attempting to execute itself using the administrator token and gain administrator privileges, all without triggering UAC prompts.",
-      "This type of attack is called a UAC bypass."
-    ],
+    description: "Phanto is a utility that specializes in UAC bypass and privilege escalation, enabling it to bypass User Account Control on Windows 10 and 11 systems and attain Administrator privileges. In the absence of administrative privileges, Phanto.exe attempts to elevate its own permissions by attempting to execute itself using the administrator token and gain administrator privileges, all without triggering UAC prompts. This type of attack is called a UAC bypass.",
     projectDone: false,
     startDate: new Date("2023-01-0T00:00:00.000Z"),
     latestVersion: "1.0",

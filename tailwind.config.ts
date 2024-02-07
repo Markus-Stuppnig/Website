@@ -35,7 +35,7 @@ const config: Config = {
       socialicon: "#D1D8E0",
 
       selectedDark: "#94a3b8",
-      mywhite: "#f1f5f9",
+      mywhite: "#fff",
 
       primary: "#74c1fc",
       secondary: "#4a65ff",
