@@ -3,7 +3,7 @@ import nodemailer from 'nodemailer';
 import Mail from 'nodemailer/lib/mailer';
 
 export async function POST(request: NextRequest) {
-  const { email, message } = await request.json();
+  const { email, message, rating } = await request.json();
 
   const transport = nodemailer.createTransport({
 	host: "mail.privateemail.com",
@@ -29,7 +29,7 @@ export async function POST(request: NextRequest) {
     to: process.env.MY_EMAIL,
     // cc: email, (uncomment this line if you want to send a copy to the sender)
     subject: `Message from Contact Form via Website`,
-    text: `${email} sent you a message:\n${message}`,
+    text: `${email} sent you a message:\n\n${message}\n\nAdditional Rating:\n${rating}`,
   };
 
   const sendMailPromise = () =>
