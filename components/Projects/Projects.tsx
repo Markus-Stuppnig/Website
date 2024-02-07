@@ -1,7 +1,6 @@
 import React from "react";
 import SectionHeading from "@/components/-General/SectionHeading";
 import { projectsData } from "./projectsData";
-import ProjectCard from "./ProjectCard";
 import SectionDivider from "../-General/SectionDivider";
 import Progressbar from "./Progressbar";
 import Link from "next/link";
