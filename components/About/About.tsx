@@ -12,7 +12,7 @@ export default function About() {
         </div>
         <div className={`flex flex-col w-1/2 text-center`}>
           <SectionHeading additional="mt-[10rem] font-semibold mb-5" textColor="text-secondary">Full-Stack Developer</SectionHeading>
-          <h4 className="text-xl text-secondary">Join me building wonderful software.</h4>
+          <h4 className="text-2xl text-secondary">Join me building wonderful software.</h4>
         </div>
       </div>
     </section>

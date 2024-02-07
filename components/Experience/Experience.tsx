@@ -14,8 +14,8 @@ export default function Experience() {
   
   return (
     <div>
-      <SectionHeading>My experience</SectionHeading>
-      <VerticalTimeline lineColor="#89f" animate={true}>
+      <SectionHeading additional="mb-[5rem] font-semibold" textColor="text-primary">My experience</SectionHeading>
+      <VerticalTimeline lineColor="#74c1fc" animate={true}>
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
@@ -38,7 +38,7 @@ export default function Experience() {
                 fontSize: "1.5rem",
               }}
             >
-              <ExperienceCard experience={item} index={index} />
+              <ExperienceCard experience={item} />
             </VerticalTimelineElement>
           </React.Fragment>
         ))}

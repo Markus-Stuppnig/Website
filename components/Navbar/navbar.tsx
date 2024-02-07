@@ -22,7 +22,7 @@ const Header = () => {
   return (
     <div className="z-[9999] w-full h-25">
         <div className="container mx-auto px-4 h-full">
-          <div className="flex justify-between items-center h-full text-xl">
+          <div className="flex justify-between items-center h-full text-2xl">
 
             <motion.div
               initial={{ scale: 1 }}

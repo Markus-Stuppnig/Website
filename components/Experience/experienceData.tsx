@@ -23,7 +23,7 @@ export const experiencesData: Experience[] = [
     date: "September 2016 - June 2020",
   },
   {
-    title: "Technologisches Gerwerbemuseum (TGM)",
+    title: "Technologisches Gerwerbemuseum",
     location: "ISCED 5 - Information Technology - Vienna, Austria",
     description: [
       "I am very proud to consider myself a student of this technologically advanced school. My interest in technology dates back to my early childhood, and this school has truly allowed me to blossom.",
@@ -53,7 +53,7 @@ export const experiencesData: Experience[] = [
     date: "July 2022 - September 2023",
   },
   {
-    title: "Technologisches Gerwerbemuseum (TGM)",
+    title: "Technologisches Gerwerbemuseum",
     location: "ISCED 5 - Data Science - Vienna, Austria",
     description: [
       "Having returned from america and completed my summer internship, I now find myself back in 12th grade in Vienna. I have decided to pursue the Data Science track within the system technology branch, as I find it the most interesting.",
