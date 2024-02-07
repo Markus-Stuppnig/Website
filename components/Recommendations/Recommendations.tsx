@@ -13,13 +13,13 @@ export default function Recommendations() {
   return (
     <section id="about" className="flex justify-center w-full">
 		<div style={{ perspective: "1000px" }} className="flex flex-col justify-center items-center w-full text-center">
-			<SectionHeading additional="mb-[2rem] font-semibold" textColor="text-primary">Recommendations</SectionHeading>
-			<p className="text-2xl font-medium text-primary">Here, you’ll see some of my recommendations</p>
+			<SectionHeading additional="mb-[2rem] font-semibold" textColor="text-secondary">Recommendations</SectionHeading>
+			<p className="text-2xl font-medium text-secondary">Here, you’ll see some of my recommendations</p>
 			<SectionDivider height="h-[1rem] md:h-[4rem]" />
 
 			{recommendationsData.map((recommendation, index) => (
-				<div style={{ transform: "rotate3d(1, 0.1, 0, 15deg)", transformStyle: "preserve-3d" }} key={`recommendation${index}`} className="flex flex-col w-full justify-center items-center bg-secondary px-[80rem] pt-[4rem] text-white">
-					<div className="flex flex-col items-center justify-center w-11/12 md:w-[45rem] lg:w-[60rem] bg-white rounded-t-3xl shadow-xl backdrop-filter backdrop-blur-lg bg-opacity-20">
+				<div style={{ transform: "rotate3d(1, 0.1, 0, 10deg)", transformStyle: "preserve-3d" }} key={`recommendation${index}`} className="flex flex-col w-full justify-center items-center bg-secondary shadow shadow-3xl px-[300rem] py-[4rem] text-white">
+					<div className="flex flex-col items-center justify-center w-11/12 md:w-[45rem] lg:w-[60rem] bg-white rounded-3xl shadow-xl backdrop-filter backdrop-blur-lg bg-opacity-20">
 						<div className="flex flex-col ml-[3rem] text-start">
 							<div className="flex flex-row mt-10 justify-between">
 								<Link href={recommendation.person.link} target="_blank" className="flex flex-row">
