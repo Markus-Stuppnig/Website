@@ -18,7 +18,7 @@ export default function Recommendations() {
 			<SectionDivider height="h-[1rem] md:h-[4rem]" />
 
 			{recommendationsData.map((recommendation, index) => (
-				<div style={{ transform: "rotate3d(1, 0.1, 0, 25deg)", transformStyle: "preserve-3d" }} key={`recommendation${index}`} className="flex flex-col w-full justify-center items-center bg-secondary pt-[4rem] text-white">
+				<div style={{ transform: "rotate3d(1, 0.1, 0, 15deg)", transformStyle: "preserve-3d" }} key={`recommendation${index}`} className="flex flex-col w-full justify-center items-center bg-secondary px-[80rem] pt-[4rem] text-white">
 					<div className="flex flex-col items-center justify-center w-11/12 md:w-[45rem] lg:w-[60rem] bg-white rounded-t-3xl shadow-xl backdrop-filter backdrop-blur-lg bg-opacity-20">
 						<div className="flex flex-col ml-[3rem] text-start">
 							<div className="flex flex-row mt-10 justify-between">
