@@ -20,9 +20,9 @@ const Header = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="z-[9999] w-full h-25">
+    <div className="z-[9999] w-full h-25 bg-white sticky">
         <div className="container mx-auto px-4 h-full">
-          <div className="flex justify-between items-center h-full text-2xl">
+          <div className="flex justify-between items-center h-full text-xl">
 
             <motion.div
               initial={{ scale: 1 }}

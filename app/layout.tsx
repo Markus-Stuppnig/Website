@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`overflow-scroll`} style={{scrollBehavior:'smooth'}}>
       <body className={`${myFont.className}`}>
-        <div className="overflow-x-hidden bg-white">
+        <div className="overflow-x-hidden bg-white z-10">
           <Navbar />
           {children}
           <Analytics />
