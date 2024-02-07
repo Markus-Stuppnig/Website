@@ -6,6 +6,7 @@ import { recommendationsData } from "./recommendationsData";
 import Image from "next/image";
 import Link from "next/link";
 import SectionDivider from "../-General/SectionDivider";
+import { SocialIcon } from "react-social-icons";
 
 export default function Recommendations() {
 
@@ -19,16 +20,21 @@ export default function Recommendations() {
 			{recommendationsData.map((recommendation, index) => (
 				<div key={`recommendation${index}`} className="flex flex-col items-center justify-center w-11/12 md:w-[45rem] lg:w-[60rem] bg-white rounded-3xl shadow-xl backdrop-filter backdrop-blur-lg bg-opacity-30">
 					<div className="flex flex-col ml-4 sm:ml-10 text-start">
-						<Link href={recommendation.person.link} target="_blank" className="flex flex-row mt-10 align-middle">
-							<div>
-								<Image className="rounded-full drop-shadow-lg" src={recommendation.person.imagePath} width={70} height={70} alt="Portrait of Benjamin Knauss" />
-							</div>
-							<div className="flex flex-col text-start ml-5">
-								<h2 className="text-md font-medium">{recommendation.person.name}</h2>
-								<h2 className="text-md font-medium">{recommendation.person.position}</h2>
-								<h2 className="text-sm font-medium sm:font-normal 2xl:font-medium">{recommendation.person.additionalInformation}</h2>
-							</div>
-						</Link>
+						<div className="flex flex-row mt-10 justify-between">
+							<Link href={recommendation.person.link} target="_blank" className="flex flex-row">
+								<div>
+									<Image className="rounded-full drop-shadow-lg" src={recommendation.person.imagePath} width={70} height={70} alt="Portrait of Benjamin Knauss" />
+								</div>
+								<div className="flex flex-col text-start ml-5">
+									<h2 className="text-md font-medium">{recommendation.person.name}</h2>
+									<h2 className="text-md font-medium">{recommendation.person.position}</h2>
+									<h2 className="text-sm font-medium sm:font-normal 2xl:font-medium">{recommendation.person.additionalInformation}</h2>
+								</div>
+							</Link>
+							<Link href={recommendation.person.link} target="_blank" className="mr-10">
+								<SocialIcon as="div" network="linkedin" />
+							</Link>
+						</div>
 						<div className="mt-10 mb-10 mr-4 ml-0 sm:mr-10 sm:ml-0">
 							<p className="font-medium sm:font-normal 2xl:font-medium" dangerouslySetInnerHTML={{ __html: recommendation.text }} />
 						</div>
