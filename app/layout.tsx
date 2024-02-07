@@ -5,7 +5,7 @@ import { Rubik } from "next/font/google";
 import Navbar from "@/components/Navbar/navbar";
 import Footer from "@/components/Footer/Footer";
 
-export const myFont = Rubik({ subsets: ['latin']});
+const myFont = Rubik({ subsets: ['latin']});
 
 export default function RootLayout({
   children,
