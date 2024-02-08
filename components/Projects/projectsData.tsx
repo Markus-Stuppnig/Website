@@ -44,24 +44,18 @@ export const projectsData: Project[] = [
       "In the beginning of 2023 I deeply looked into Windows and its security vulnerabilities."
     ]
   },
-  // {
-  //   title: "VSA",
-  //   description: [
-  //     "Phanto is a utility that specializes in UAC bypass and privilege escalation, enabling it to bypass User Account Control on Windows 10 and 11 systems and attain Administrator privileges.",
-  //     "In the absence of administrative privileges, Phanto.exe attempts to elevate its own permissions by attempting to execute itself using the administrator token and gain administrator privileges, all without triggering UAC prompts.",
-  //     "This type of attack is called a UAC bypass."
-  //   ],
-  //   projectDone: false,
-  //   startDate: new Date("2023-01-0T00:00:00.000Z"),
-  //   latestVersion: "1.0",
-  //   links: [
-  //     "https://github.com/Markus-Stuppnig/Phanto",
-  //   ],
-  //   progress: 40,
-  //   incentive: [
-  //     "In the beginning of 2023 I deeply looked into Windows and its security vulnerabilities."
-  //   ]
-  // },
-  //Schengen-Borders-Information-Scraper
+  {
+    title: "Schengen-Borders-Information-Scraper",
+    description: "This Python script scrapes information about temporary reintroduction of border control in the Schengen Area from the <a href='https://home-affairs.ec.europa.eu/policies/schengen-borders-and-visa/schengen-area/temporary-reintroduction-border-control_en' target='_blank'>European Commission's website</a>. You can explore this project by visiting the following URL on the official PyPI website: <a href='https://pypi.org/project/Schengen-Borders-Information-Scraper/' target='_blank'>Schengen Borders Information Scraper on PyPI</a>",
+    projectDone: true,
+    startDate: new Date("2023-01-0T00:00:00.000Z"),
+    latestVersion: "0.0.1",
+    link: "https://pypi.org/project/Schengen-Borders-Information-Scraper/",
+    progress: 100,
+    incentive: [
+      "TODO"
+    ]
+  },
+  //VSA
   //Promodoro Logger
 ] as const;

@@ -18,8 +18,8 @@ export default function Recommendations() {
 			<SectionDivider height="h-[1rem] md:h-[4rem]" />
 
 			{recommendationsData.map((recommendation, index) => (
-				<div style={{ perspective: "1000px" }} key={`recommendation${index}`} className="flex flex-col w-full justify-center items-center bg-secondary shadow shadow-3xl pt-[6rem] py-[1.4rem] text-white">
-					<div style={{ transform: "rotate3d(1, 0, 0, 10deg)", transformStyle: "preserve-3d" }} className="flex flex-col items-center justify-center w-11/12 md:w-[45rem] lg:w-[60rem] bg-white rounded-t-3xl shadow-xl backdrop-filter backdrop-blur-lg bg-opacity-20">
+				<div key={`recommendation${index}`} className="flex flex-col w-full justify-center items-center bg-secondary shadow shadow-3xl py-[6rem] text-white">
+					<div className="flex flex-col items-center justify-center w-11/12 md:w-[45rem] lg:w-[60rem] bg-white rounded-3xl shadow-xl backdrop-filter backdrop-blur-lg bg-opacity-20">
 						<div className="flex flex-col ml-[3rem] text-start">
 							<div className="flex flex-row mt-10 justify-between">
 								<Link href={recommendation.person.link} target="_blank" className="flex flex-row">

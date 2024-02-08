@@ -19,28 +19,47 @@ export default function Projects() {
 		<SectionDivider />
 		<div className="grid grid-cols-3">
 			<div className="col-span-3 md:col-span-2 bg-secondary shadow-2xl text-mywhite py-[6rem] grid grid-cols-12 md:rounded-r-3xl">
-				<Link href={projectsData[0].link} target="_blank" className="col-start-2 md:col-start-3 col-span-10 md:col-span-8 flex flex-col">
-					<SectionHeading additional="font-semibold mb-5" textColor="text-mywhite">{projectsData[0].title}</SectionHeading>
+				<div className="col-start-2 md:col-start-3 col-span-10 md:col-span-8 flex flex-col">
+					<Link href={projectsData[0].link} target="_blank">
+						<SectionHeading additional="font-semibold mb-5" textColor="text-mywhite">{projectsData[0].title}</SectionHeading>
+					</Link>
 					<div className="w-full grid grid-cols-9">
 						<div className="col-start-1 col-span-8 flex flex-col">
 							<p className="font-medium text-2xl mb-[2rem]" dangerouslySetInnerHTML={{ __html: projectsData[0].description }} />
 							<Progressbar number={projectsData[0].progress} colorDone={"bg-primary"} colorNot={"#fff"} height={"[1.5rem]"} opacityDone={"40"} opacityNot={"20"} />
 						</div>
 					</div>
-				</Link>
+				</div>
 			</div>
 		</div>
 		<div className="grid grid-cols-3 mt-[10rem]">
 			<div className="col-span-3 md:col-start-2 md:col-span-2 bg-secondary shadow-2xl text-mywhite py-[6rem] grid grid-cols-12 md:rounded-l-3xl">
-				<Link href={projectsData[1].link} target="_blank" className="col-start-2 md:col-start-3 col-span-10 md:col-span-8 flex flex-col">
-					<SectionHeading additional="font-semibold mb-5" textColor="text-mywhite">{projectsData[1].title}</SectionHeading>
+				<div className="col-start-2 md:col-start-3 col-span-10 md:col-span-8 flex flex-col">
+					<Link href={projectsData[1].link} target="_blank">
+						<SectionHeading additional="font-semibold mb-5" textColor="text-mywhite">{projectsData[1].title}</SectionHeading>
+					</Link>
 					<div className="w-full grid grid-cols-9">
 						<div className="col-start-1 col-span-8 flex flex-col">
 							<p className="font-medium text-2xl mb-[2rem]" dangerouslySetInnerHTML={{ __html: projectsData[1].description }} />
 							<Progressbar number={projectsData[1].progress} colorDone={"bg-primary"} colorNot={"#fff"} height={"[1.5rem]"} opacityDone={"40"} opacityNot={"20"} />
 						</div>
 					</div>
-				</Link>
+				</div>
+			</div>
+		</div>
+		<div className="grid grid-cols-3 mt-[10rem]">
+			<div className="col-span-3 md:col-span-2 bg-secondary shadow-2xl text-mywhite py-[6rem] grid grid-cols-12 md:rounded-r-3xl">
+				<div className="col-start-2 md:col-start-3 col-span-10 md:col-span-8 flex flex-col">
+					<Link href={projectsData[2].link} target="_blank">
+						<SectionHeading additional="font-semibold mb-5" textColor="text-mywhite">{projectsData[2].title}</SectionHeading>
+					</Link>
+					<div className="w-full grid grid-cols-9">
+						<div className="col-start-1 col-span-8 flex flex-col">
+							<p className="font-medium text-2xl mb-[2rem]" dangerouslySetInnerHTML={{ __html: projectsData[2].description }} />
+							<Progressbar number={projectsData[2].progress} colorDone={"bg-primary"} colorNot={"#fff"} height={"[1.5rem]"} opacityDone={"40"} opacityNot={"20"} />
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
