@@ -23,7 +23,7 @@ export default function Contact() {
   return (
     <div className="flex justify-center w-full h-screen items-center">
       <div className="w-full flex justify-center">
-        <div className="flex flex-col justify-start w-full max-w-[70rem]">
+        <div className="flex flex-col justify-start w-11/12 max-w-[50rem] xl:max-w-[60rem]">
 
           <div className="flex flex-col mb-[2rem] -mt-[10rem]">
             <SectionHeading additional="font-semibold mb-5" textColor="text-secondary">Contact me</SectionHeading>
