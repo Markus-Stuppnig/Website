@@ -35,7 +35,7 @@ export default function JourneySection({journey, indexOfJourney}: {journey: Jour
 							<SectionHeading additional="font-semibold mb-5" textColor="text-primary">
 								{journey.title}
 							</SectionHeading>
-							<p className="text-[1.5rem]c font-medium" dangerouslySetInnerHTML={{ __html: journey.description }} />
+							<p className="text-[1.5rem] font-medium" dangerouslySetInnerHTML={{ __html: journey.description }} />
 						</div>
 					</div>
 					<div className="w-2/3 md:w-1/3 flex justify-center">
