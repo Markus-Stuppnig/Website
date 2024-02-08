@@ -23,10 +23,10 @@ export default function Contact() {
   return (
     <div className="flex justify-center w-full h-screen items-center">
       <div className="w-full flex justify-center">
-        <div className="flex flex-col justify-start w-full max-w-[70rem] p-[2rem]">
+        <div className="flex flex-col justify-start w-full max-w-[70rem]">
 
-          <div className="flex flex-col p-[2rem] mb-[2rem] rounded-xl">
-            <SectionHeading additional="mt-[10rem] font-semibold mb-5" textColor="text-secondary">Contact me</SectionHeading>
+          <div className="flex flex-col mb-[2rem] -mt-[10rem]">
+            <SectionHeading additional="font-semibold mb-5" textColor="text-secondary">Contact me</SectionHeading>
 
             <h4 className="text-2xl text-black">
               Please contact me directly at{" "}
