@@ -30,7 +30,7 @@ export default function JourneySection({journey, indexOfJourney}: {journey: Jour
 			
 			{(indexOfJourney % 2 != 0) &&
 				<div className="flex flex-col md:flex-row justify-center items-center w-full">
-					<div className="visible md:hidden w-2/3 md:w-1/3 flex justify-center">
+					<div className="block md:hidden w-2/3 md:w-1/3 flex justify-center">
 						<div className={`${journey.margin}`}>
 							<Image width={journey.width} height={journey.height} src={journey.imagePath} alt={`Title image of Journey ${journey.title}`} className="rounded-2xl shadow-2xl" />
 						</div>
@@ -43,7 +43,7 @@ export default function JourneySection({journey, indexOfJourney}: {journey: Jour
 							<p className="text-[1.5rem] font-medium" dangerouslySetInnerHTML={{ __html: journey.description }} />
 						</div>
 					</div>
-					<div className="hidden md:visible w-2/3 md:w-1/3 flex justify-center">
+					<div className="hidden md:block w-2/3 md:w-1/3 flex justify-center">
 						<div className={`${journey.margin}`}>
 							<Image width={journey.width} height={journey.height} src={journey.imagePath} alt={`Title image of Journey ${journey.title}`} className="rounded-2xl shadow-2xl" />
 						</div>
