@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import menuData from "./menuData";
 import { motion, AnimatePresence } from "framer-motion";
 import ContactUsButton from "@/components/ContactButton/ContactButton";
+import { data } from "../-General/generalData";
 
 const zoomScale = 1.04;
 const zoomDuration = 0.06;
@@ -37,7 +38,7 @@ const Header = () => {
                     : `${navbarItemsDefault} ${navbarItemsSelectedOnHover} ${navbarFontWeight} px-2 py-2`
                 }
               >
-                Markus Stuppnig
+                {data.name}
               </Link>
             </motion.div>
 
