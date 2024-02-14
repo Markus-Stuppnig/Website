@@ -37,7 +37,7 @@ export default function Recommendations() {
 								</Link>
 							</div>
 							<div className="mt-10 mb-10 mr-4 ml-0 sm:mr-10 sm:ml-0">
-								<p className="text-md md:font-normal 2xl:font-medium" dangerouslySetInnerHTML={{ __html: recommendation.text }} />
+								<p className="text-2xl md:font-normal" dangerouslySetInnerHTML={{ __html: recommendation.text }} />
 							</div>
 						</div>
 					</div>
