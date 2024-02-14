@@ -23,7 +23,7 @@ export const journeysData: Journey[] = [
 	{
 		title: "SCUBA Diving",
 		description: [
-			"Receiving my PADI Open Water Diver Certification in summer 2023, I can now offially call myself being part of the wonderful diving communtiy. You will never forget your first breath under the water, it's such a fascinating thing to experience. Being in exposure to the aquatic world and seing all this life is not only appealing, but it also relaxes you on a completely different level. Another awesome thing is diving with a close friend or in a group. Just the thought of being in such a dangerous place, somewhere humans wouldn't survive without modern technology and having to support each other is an incredible feeling.<br /><br /><a href='/contact' class='underline decoration-[0.2rem] underline-offset-4'>Let's go dive together!</a>",
+			"Receiving my PADI Open Water Diver Certification in summer 2023, I can now offially call myself being part of the wonderful diving community. You will never forget your first breath under the water, it's such a fascinating thing to experience. Being in exposure to the aquatic world and seing all this life is not only appealing, but it also relaxes you on a completely different level. Another awesome thing is diving with a close friend or in a group. Just the thought of being in such a dangerous place, somewhere humans wouldn't survive without modern technology and having to support each other is an incredible feeling.<br /><br /><a href='/contact' class='underline decoration-[0.2rem] underline-offset-4'>Let's go dive together!</a>",
 		],
 		imagePath: "/img2.png",
 		link: "www.google.com",
