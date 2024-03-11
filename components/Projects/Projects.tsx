@@ -16,8 +16,8 @@ export default function Projects() {
 				</div>
 			</div>
 		</div>
-		<SectionDivider />
-		<div className="grid grid-cols-3">
+		{/* <SectionDivider /> */}
+		<div className="grid grid-cols-3 mt-[10rem]">
 			<div className="col-span-3 md:col-span-2 bg-secondary text-mywhite py-[6rem] grid grid-cols-12 md:rounded-r-3xl">
 				<div className="col-start-2 md:col-start-3 col-span-10 md:col-span-8 flex flex-col">
 					<Link href={projectsData[0].link} target="_blank">
