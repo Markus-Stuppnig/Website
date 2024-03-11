@@ -9,7 +9,6 @@ export interface Project {
   imagePath?: string;
   contributers?: Contributor[];
   progress: number;
-  incentive?: string[];
 }
 
 export interface Contributor {
@@ -28,9 +27,6 @@ export const projectsData: Project[] = [
     latestVersion: "1.0",
     link: "https://github.com/Markus-Stuppnig/FileIOPlus",
     progress: 100,
-    incentive: [
-      "This was one of my first, if not the first project I coded. I had a lot of fun back then."
-    ]
   },
   {
     title: "Phanto",
@@ -40,9 +36,6 @@ export const projectsData: Project[] = [
     latestVersion: "1.0",
     link: "https://github.com/Markus-Stuppnig/Phanto",
     progress: 40,
-    incentive: [
-      "In the beginning of 2023 I deeply looked into Windows and its security vulnerabilities."
-    ]
   },
   {
     title: "Schengen-Borders-Information-Scraper",
@@ -52,10 +45,15 @@ export const projectsData: Project[] = [
     latestVersion: "0.0.1",
     link: "https://pypi.org/project/Schengen-Borders-Information-Scraper/",
     progress: 100,
-    incentive: [
-      "TODO"
-    ]
   },
-  //VSA
+  {
+    title: "VSA",
+    description: "The market sees a steady rise in digital products and services. Personal digital possessions like social media accounts and crypto wallets risk being lost upon the user's demise. Though some platforms offer asset transfer solutions, they're often product-specific. This project aims to provide a universal solution for managing digital assets, addressing this issue comprehensively.<br /><br />In my dual role as the project leader and developer, I lead the development process, organize stakeholder meetings, and contribute to feature implementation.",
+    projectDone: false,
+    startDate: new Date("2023-11-0T00:00:00.000Z"),
+    latestVersion: "0.1",
+    link: "",
+    progress: 30,
+  },
   //Promodoro Logger
 ] as const;
