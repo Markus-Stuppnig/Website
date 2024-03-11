@@ -5,6 +5,7 @@ import { Rubik } from "next/font/google";
 import Navbar from "@/components/Navbar/navbar";
 import Footer from "@/components/Footer/Footer";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const myFont = Rubik({ subsets: ['latin']});
 
@@ -21,6 +22,7 @@ export default function RootLayout({
           <Navbar />
           {children}
           <Analytics />
+          <SpeedInsights/>
           <Footer />
         </div>
       </body>
