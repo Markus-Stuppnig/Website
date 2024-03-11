@@ -16,7 +16,7 @@ export const journeysData: Journey[] = [
 		],
 		imagePath: "/img1.jpeg",
 		link: "www.google.com",
-		width: 300,
+		width: 400,
 		height: 1,
 		margin: "",
 	},
