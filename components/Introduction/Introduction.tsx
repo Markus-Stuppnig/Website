@@ -8,11 +8,11 @@ export default function Introduction() {
   return (
     <section id="introduction" className="flex flex-col w-full mt-[10rem] md:mt-0">
 		<div className="w-full grid grid-cols-12 bg-secondary text-mywhite pt-[5rem] py-[15rem]">
-			<div className="col-span-12 mx-5 md:mx-0 md:col-start-4 md:col-span-6 justify-center items-center text-center">
+			<div className="col-span-12 mx-5 lg:mx-0 lg:col-start-3 lg:col-span-8 xl:col-start-4 xl:col-span-6 justify-center items-center text-center">
 				<SectionHeading additional="font-semibold mb-7">Hi, I’m Markus. Nice to meet you.</SectionHeading>
 				<h4 className="text-2xl tracking-wider leading-9">Since my early childhood, I have been immersed in coding. Solving complex problems and appreciating the simplicity of the solutions was truly fascinating for me. I was always good in math and decided to pursue my hobby in a technical college, an ISCED 5 school. This may have been the best decision I ever made. Having returned from my exchange semester in the United States, I will continue my education and simultaneously gain work experience. The technical topics I am most passionate about are cloud computing, cybersecurity, and data science.</h4>
 			</div>
-			<div className="hidden md:block col-start-11 flex justify-center items-center">
+			<div className="hidden lg:block col-start-11 flex justify-center items-center">
 				<Link href="/contact" className="flex flex-col py-[1rem] px-[1rem] rounded-full bg-[#42d7f5] justify-center items-center text-center ease-in-out duration-300 hover:scale-105">
 					<p className="text-xl font-bold">{data.callForAction1}</p>
 				</Link>
