@@ -29,13 +29,13 @@ export default function Introduction() {
 				<div className="flex w-full md:w-1/3 justify-center mt-7 md:mt-0">
 					<div className="flex flex-col w-3/4 text-center">
 						<h3 className="text-[2rem] font-semibold">Data Science</h3>
-						<p className="text-2xl mt-5">The capabilities of AI these days is incredible. I decided to pusue the Data Science track in my current school to learn how to develop AIs and how to manage the data.</p>
+						<p className="text-2xl mt-5">The capabilities of AI these days is incredible. I decided to pursue the Data Science track in my current school to learn how to develop AIs and how to manage the data.</p>
 					</div>
 				</div>
 				<div className="flex w-full md:w-1/3 justify-center mt-7 md:mt-0">
 					<div className="flex flex-col w-3/4 text-center">
 						<h3 className="text-[2rem] font-semibold">Cybersecurity</h3>
-						<p className="text-2xl mt-5">I am a proud recipient of the TestOut CyberDefense Pro Certification. In the beginning of 2023 I deeply looked into Windows vulnerabilies.</p>
+						<p className="text-2xl mt-5">I am a proud recipient of the TestOut CyberDefense Pro Certification. In the beginning of 2023 I deeply looked into Windows vulnerabilities.</p>
 					</div>
 				</div>
 			</div>
