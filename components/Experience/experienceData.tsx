@@ -40,7 +40,7 @@ export const experiencesData: Experience[] = [
       "I am a proud recipient of an Honorary High School Diploma from Washington Community High School, acknowledging the completion of graduation requirements. This semester has taught me so much and I truly value the time I spent there and the friends I made.",
     ],
     icon: React.createElement(CgWorkAlt),
-    date: "December 2022 - June 2023",
+    date: "December 2022 - May 2023",
   },
   {
     title: "Siemens Full-Stack Developer",
@@ -50,7 +50,7 @@ export const experiencesData: Experience[] = [
       "Visualizing powerflow and state estimation data with an Angular WebServer that sends requests to a Java Backend via Spring Boot on the same machine for offline usage.",
     ],
     icon: React.createElement(LuCode),
-    date: "July 2022 - September 2023",
+    date: "July 2023 - August 2023",
   },
   {
     title: "Technologisches Gerwerbemuseum",
