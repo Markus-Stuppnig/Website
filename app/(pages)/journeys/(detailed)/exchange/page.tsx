@@ -8,8 +8,8 @@ export default function Home() {
 		<h3>Decision</h3>
 		<p>
 			When I was about 13 years old, youtube recommended me a video of a girl, talking about her exchange semester. Unfortunately I couldn&apos;t find her again. She seemed incredible happy for experiencing such a cool time and kind of made me crave that too. Within the next few weeks I&apos;ve seen more and more videos of teens sharing their memories - mostly positive.
-			Surprisingly on one day, my math teacher in lower secondary was talking about a carrier event that would take place in our school the very next weekend. So I said fuck it I am going there. My dad and I went there and soon found out about Education First (short EF), an organization that specializes in exchange years and language trips.
-			We gave them our contact details, and almost forgot about it. But then, 2 years later they CALLED us - &quot;Is Markus still interested in an exchange semester?&quot; - And Fuck yeah I was.
+			Surprisingly on one day, my math teacher in lower secondary was talking about a carrier event that would take place in our school the very next weekend. My dad and I went there and soon found out about Education First (short EF), an organization that specializes in exchange years and language trips.
+			We gave them our contact details, and almost forgot about it. But then, 2 years later they CALLED us - &quot;Is Markus still interested in an exchange semester?&quot; - Absolutely!
 		</p>
 
 		<h3>Preperations</h3>
