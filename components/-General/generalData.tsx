@@ -1,6 +1,6 @@
 export const data = {
 	name: "Markus Stuppnig",
-	profession: "Full-Stack Developer",
+	profession: "Software Architect",
 	slogan: "Simplicity is key.",
 
 	callForAction1: "Wanna know more?",

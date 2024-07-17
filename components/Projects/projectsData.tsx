@@ -53,7 +53,7 @@ export const projectsData: Project[] = [
     startDate: new Date("2023-11-0T00:00:00.000Z"),
     latestVersion: "0.1",
     link: "",
-    progress: 30,
+    progress: 90,
   },
   //Promodoro Logger
 ] as const;

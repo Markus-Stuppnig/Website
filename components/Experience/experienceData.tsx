@@ -2,6 +2,7 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap, LuDatabase, LuCode } from "react-icons/lu";
 import { HiOutlineDesktopComputer } from "react-icons/hi";
+import { FaCodeBranch } from "react-icons/fa6";
 
 export interface Experience {
   title: string;
@@ -9,9 +10,9 @@ export interface Experience {
   description: string[];
   icon: JSX.Element;
   date: string;
- }
+}
 
- 
+
 export const experiencesData: Experience[] = [
   {
     title: "Polgargymnasium",
@@ -43,7 +44,7 @@ export const experiencesData: Experience[] = [
     date: "December 2022 - May 2023",
   },
   {
-    title: "Siemens Full-Stack Developer",
+    title: "Siemens Software Engineer",
     location: "Summer Internship - Vienna, Austria",
     description: [
       "Adding a SaaS feature to import offline SimBench powergrids into an internal powergrid of a Network Analysis Tool for Supervisory Control and Data Acquisition (SCADA).",
@@ -60,5 +61,15 @@ export const experiencesData: Experience[] = [
     ],
     icon: React.createElement(LuDatabase),
     date: "September 2023 - present",
+  },
+  {
+    title: "Giesecke+Devrient Software Architect",
+    location: "Summer Internship - Dubai, United Arabic Emirates",
+    description: [
+      "Developing an unbeatable competitor analysis platform for market intelligence. Retrieving data from competitors websites and digital identity content creators on social media and saving it to a database.",
+      "This data contains business strategies, prices, products and features and will be fed into an LLM which summarizes and analyzes it as well as recommending ways to improve sales. Finally, a report will be sent to the C-Levels via mail automatically every month.",
+    ],
+    icon: React.createElement(FaCodeBranch),
+    date: "July 2024 - August 2024",
   },
 ] as const;
