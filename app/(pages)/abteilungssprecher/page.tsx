@@ -44,33 +44,39 @@ export default function Home() {
             Unser Programm
           </SectionHeading>
           <p>
-            Wir haben uns Gedanken gemacht, wie wir die Schule für uns und
-            unsere Mitschüler:innen verbessern können. Hier sind unsere Ideen:
-            Ein Abteilungssprecher vertritt die Interessen der Schüler:innen
-            gegenüber der Schulleitung und den Lehrer:innen. Wir wollen uns für
-            die Anliegen der Schüler:innen einsetzen und die Schule für alle
-            verbessern. Er ist Ansprechpartner für alle Schüler:innen und
-            Lehrer:innen und kümmert sich um die Organisation von
-            Veranstaltungen und Projekten.
-          </p>
-          <p>
             Uns interessiert es was EUCH wichtig ist. Der Hauptpunkt unseres
-            Wahlprogramms ist eine Abstimmungsplatform mit der wir EURE
-            Meinungen einholen. Wir wollen wissen was EUCH wichtig ist und wie
-            wir die Schule für EUCH verbessern können.
+            Wahlprogramms ist ein Abstimmungssystem mit der wir EURE Meinungen
+            einholen. Wir wollen wissen was EUCH wichtig ist und wie wir die
+            Schule für EUCH verbessern können.
           </p>
-          <p>
-            Wir haben auch Ideen gesammelt, über die abgestimmt werden kann.
-            Hier sind einige Beispiele:
-          </p>
-          <ul>
-            <li>Verbesserung der Ausstattung der Schule</li>
-            <li>Organisation von Veranstaltungen</li>
+          <SectionHeading
+            textColor="text-myblack"
+            size="text-[1rem] md:text-[1rem]"
+            additional="font-semibold mb-3 mt-5"
+          >
+            Hier sind einige Beispiele über die abgestimmt werden kann:
+          </SectionHeading>
+          <ul className="list-disc">
+            <li>Getränkeautomat vom 8. Stock in den 9. Stock verschieben</li>
             <li>
-              Verbesserung der Kommunikation zwischen Schüler:innen und
-              Lehrer:innen
+              Laser Tag oder Spa Ausflug um vom Schulstress runter zu kommen
             </li>
-            <li>Organisation von Workshops und Vorträgen</li>
+            <li>
+              3. Klässner können mit einem Buddy aus der 5. einen Tag die
+              Spezialiserung schnuppern
+            </li>
+            <li>
+              Bessere Klassenräume (Ausstattung: Beamer, Steckdosen,
+              Verlängerungskabel)
+            </li>
+            <li>
+              Überarbeitung der Aula im 9. und 11. Stock (Spinde, Möbel,
+              Steckdosen, etc.)
+            </li>
+            <li>Schüler dürfen die Microwelle im Lehrerzimmer nutzen</li>
+            <li>
+              Organisation von Events (Kino, Ausflüge, Schnitzeljagd, etc.)
+            </li>
           </ul>
 
           <SectionHeading
