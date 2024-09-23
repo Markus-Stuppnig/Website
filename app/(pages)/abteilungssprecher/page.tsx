@@ -103,7 +103,7 @@ export default function Home() {
               Organisation eines Erste-Hilfe Kurs
             </li>
             <li>
-              Lehrer-Awards!
+              Lehrer-Awards bei den Spirit-of-HIT days!
             </li>
           </ul>
 
