@@ -96,6 +96,12 @@ export default function Home() {
             <li>
               Organisation von Events (Kino, Ausflüge, Schnitzeljagd, etc.)
             </li>
+            <li>
+              Organisation eines Erste-Hilfe Kurs
+            </li>
+            <li>
+              Lehrer-Awards!
+            </li>
           </ul>
 
           <SectionHeading
