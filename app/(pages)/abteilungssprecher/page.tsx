@@ -81,7 +81,7 @@ export default function Home() {
               Laser Tag oder Spa Ausflug um vom Schulstress runter zu kommen
             </li>
             <li>
-              3. Klässner können mit einem Buddy aus der 5. einen Tag die
+              3. Klässler können mit einem Buddy aus der 5. einen Tag die
               Spezialiserung schnuppern
             </li>
             <li>
@@ -91,6 +91,9 @@ export default function Home() {
             <li>
               Überarbeitung der Aula im 9. und 11. Stock (Spinde, Möbel,
               Steckdosen, etc.)
+            </li>
+            <li>
+              Mehr Freiheit bei der Organisation des Meet & Greet
             </li>
             <li>Schüler dürfen die Microwelle im Lehrerzimmer nutzen</li>
             <li>
