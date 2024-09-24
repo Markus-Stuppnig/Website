@@ -13,31 +13,41 @@ export type FormData = {
 };
 
 export default function Contact() {
-
-  const { register, handleSubmit } = useForm<FormData>();
+  const { register, handleSubmit, reset } = useForm<FormData>();
 
   function onSubmit(data: FormData) {
-    sendEmail(data);
+    if (sendEmail(data)) {
+      alert("Form sent successfully!");
+      reset();
+    } else {
+      alert(
+        "Form couldn't be sent. Please contact the website administrator markus@stuppnig.net",
+      );
+    }
   }
-  
+
   return (
     <div className="flex justify-center w-full h-screen items-center">
       <div className="w-full flex justify-center">
         <div className="flex flex-col justify-start w-11/12 max-w-[50rem] xl:max-w-[60rem]">
-
           <div className="flex flex-col mb-[2rem] -mt-[10rem]">
-            <SectionHeading additional="font-semibold mb-5" textColor="text-secondary">Contact me</SectionHeading>
+            <SectionHeading
+              additional="font-semibold mb-5"
+              textColor="text-secondary"
+            >
+              Contact me
+            </SectionHeading>
 
             <h4 className="text-2xl text-black">
               Please contact me directly at{" "}
               <a className="underline" href="mailto:markus@stuppnig.net">
-              markus@stuppnig.net
+                markus@stuppnig.net
               </a>{" "}
               or through this form.
             </h4>
           </div>
 
-          <form 
+          <form
             className="flex flex-col w-full items-start justify-start"
             onSubmit={handleSubmit(onSubmit)}
           >
@@ -49,14 +59,14 @@ export default function Contact() {
                   required
                   maxLength={500}
                   placeholder="Your email"
-                  {...register('email', { required: true })}
+                  {...register("email", { required: true })}
                 />
                 <textarea
                   className={`h-52 mt-[2rem] text-xl rounded-3xl borderBlack p-4 transition-all`}
                   placeholder="Your message"
                   required
                   maxLength={5000}
-                  {...register('message', { required: true })}
+                  {...register("message", { required: true })}
                 />
               </div>
               <div className="flex flex-col h-full w-2/5 p-[2rem] bg-secondary rounded-3xl">
@@ -65,7 +75,7 @@ export default function Contact() {
                   placeholder="Improvements for my website"
                   required
                   maxLength={5000}
-                  {...register('rating', { required: true })}
+                  {...register("rating", { required: true })}
                 />
                 <button
                   type="submit"
