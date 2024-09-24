@@ -1,31 +1,25 @@
 import SectionHeading from "@/components/-General/SectionHeading";
 
-export default function Home() {
+export default function AbteilungssprecherPage() {
   return (
     <main className="min-h-screen">
       <section
         id="projects"
         className="mt-[5rem] flex flex-col justify-center items-center"
       >
-        <div className="mt-[4rem] mb-[8rem] flex justify-center items-center w-[300rem] h-[20rem] bg-secondary transform rotate-[3.5deg]">
+        <div className="mt-[4rem] mb-[8rem] flex justify-center items-center w-[300rem] h-[22rem] md:h-[30rem] bg-secondary transform rotate-[3.5deg]">
           <div className="flex flex-col w-full text-mywhite text-center transform -rotate-[3.5deg]">
             <SectionHeading
-              size="text-[1.8rem] md:text-[3rem]"
+              size="text-[1.8rem] md:text-[3.5rem]"
               additional="font-semibold mb-5"
             >
               Abteilungssprecherwahl
             </SectionHeading>
             <SectionHeading
-              size="text-[1rem] md:text-[3rem]"
+              size="text-[1.8rem] md:text-[3.5rem]"
               additional="font-semibold"
             >
-              STUPPNIG MARKUS - Abteilungssprecher
-            </SectionHeading>
-            <SectionHeading
-              size="text-[1rem] md:text-[3rem]"
-              additional="font-semibold mb-5"
-            >
-              RYCHKOV SERGEJ - Stellvertreter
+              STUPPNIG MARKUS
             </SectionHeading>
           </div>
         </div>
@@ -56,32 +50,36 @@ export default function Home() {
 
         <p className="italic text-lg">- Abraham Lincoln</p>
 
-        <div className="flex flex-col h-full ml-[2rem] mt-[2rem]">
+        <div className="flex flex-col h-full mx-[1rem] md:mx-[7rem]">
           <SectionHeading
             textColor="text-myblack"
             size="text-[2rem] md:text-[3rem]"
             additional="font-semibold mb-5 mt-10"
           >
-            Unser Programm
+            Wahlprogramm
           </SectionHeading>
-          <p>
-            Uns interessiert es was EUCH wichtig ist. Der Hauptpunkt unseres
-            Wahlprogramms ist ein Abstimmungssystem mit der wir EURE Meinungen
-            einholen. Wir wollen wissen was EUCH wichtig ist und wie wir die
-            Schule für EUCH verbessern können.
+
+          <p className="text-[1.2rem] md:text-[1.7rem] md:mt-[5rem]">
+            IHR seid die, die entscheiden sollten wo es hingeht. Deswegen
+            interessiert mich was EUCH wichtig ist und was EUCH am Herzen liegt.
           </p>
-          <SectionHeading
-            textColor="text-myblack"
-            size="text-[1rem] md:text-[1rem]"
-            additional="font-semibold mb-3 mt-5"
-          >
-            Hier sind einige Beispiele über die abgestimmt werden kann:
-          </SectionHeading>
-          <ul className="list-disc">
+          <br />
+
+          <p className="text-[1.2rem] md:text-[1.7rem] md:mt-[2.5rem]">
+            80% der Wahlversprechen der letzten Jahre wurden nicht eingehalten.
+            Ich habe nur ein Versprechen: Ein Abstimmungssystem, mit dem ich mir
+            EURE Meinungen einholen kann, da IHR es seid, die das Schiff am
+            laufen halten.
+          </p>
+          <br />
+
+          <p className="text-[1.2rem] md:text-[1.7rem] md:mt-[2.5rem]">
+            Hier sind einige Ideen über die abgestimmt werden kann:
+          </p>
+          <br />
+
+          <ul className="list-disc text-[1.2rem] md:text-[1.7rem] ml-[2rem] md:ml-[3rem]">
             <li>Getränkeautomat vom 8. Stock in den 9. Stock verschieben</li>
-            <li>
-              Laser Tag oder Spa Ausflug um vom Schulstress runter zu kommen
-            </li>
             <li>
               3. Klässler können mit einem Buddy aus der 5. einen Tag die
               Spezialiserung schnuppern
@@ -95,53 +93,24 @@ export default function Home() {
               Steckdosen, etc.)
             </li>
             <li>Mehr Freiheit bei der Organisation des Meet & Greet</li>
-            <li>Schüler dürfen die Microwelle im Lehrerzimmer nutzen</li>
-            <li>
-              Organisation von Events (Kino, Ausflüge, Schnitzeljagd, etc.)
-            </li>
-            <li>Organisation eines Erste-Hilfe Kurs</li>
+            <li>Organisation von Events (Kino, Ausflüge, etc.)</li>
             <li>Lehrer-Awards bei den Spirit-of-HIT days!</li>
+            <li>Organisation eines Erste-Hilfe Kurs</li>
           </ul>
 
           <SectionHeading
             textColor="text-myblack"
             size="text-[2rem] md:text-[3rem]"
-            additional="font-semibold mb-5 mt-10"
+            additional="font-semibold mt-[3rem] md:mt-[6rem]"
           >
-            Über uns
+            Über mich
           </SectionHeading>
-          <SectionHeading
-            textColor="text-myblack"
-            size="text-[1.5rem] md:text-[2.5rem]"
-            additional="font-semibold mb-5"
-          >
-            Markus Stuppnig 5DHIT
-          </SectionHeading>
-          <p>
-            Ich kandidiere gemeinsam mit Sergej Rychkov als Abteilungssprecher
-            der HIT 2024/25. Ich möchte dieser Schule was zurückgeben, nachdem
-            der Herr Professor Koppensteiner, der Herr Professor Brein, aber
-            auch zahlreiche andere Personen sich für mich und mein
-            Auslandssemester eingesetzt haben. Ich möchte mich mit diesem Amt
-            dafür bedanken und auch euch eure Träume und Wünsche erfüllen.
-          </p>
-
-          <SectionHeading
-            textColor="text-myblack"
-            size="text-[1.5rem] md:text-[2.5rem]"
-            additional="font-semibold mb-5 mt-5"
-          >
-            Sergej Rychkov 5DHIT
-          </SectionHeading>
-          <p>
-            Ich kandidiere gemeinsam mit Markus Stuppnig als Abteilungssprecher
-            der HIT 2024/25.
-          </p>
-
-          <p>
-            Wählt Markus Stuppnig als Abteilungssprecher und Sergej Rychkov als
-            Stellvertreter um uns die Möglichkeit zu geben uns für euch
-            einzusetzen!
+          <p className="text-[1.2rem] md:text-[1.7rem] mt-[1rem] mb-[3rem] md:mb-[7rem]">
+            Ich möchte dieser Schule was zurückgeben, nachdem der Herr Professor
+            Koppensteiner, der Herr Professor Brein, aber auch zahlreiche andere
+            Personen sich für mich und mein Auslandssemester eingesetzt haben.
+            Mit dem Amt als Abteilungssprecher möchte ich mich dafür bedanken
+            und euch auch eure Träume und Wünsche erfüllen.
           </p>
         </div>
       </section>

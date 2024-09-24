@@ -4,12 +4,17 @@ const menuData: Menu[] = [
   {
     title: "Projects",
     newTab: false,
-    path: "/projects"
+    path: "/projects",
   },
   {
     title: "Journeys",
     newTab: false,
-    path: "/journeys"
+    path: "/journeys",
+  },
+  {
+    title: "Abteilungssprecher",
+    newTab: false,
+    path: "/abteilungssprecher",
   },
   // {
   //   title: "Awards",
