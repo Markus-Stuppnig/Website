@@ -69,7 +69,7 @@ export default function AbteilungssprecherPage() {
             80% der Wahlversprechen der letzten Jahre wurden nicht eingehalten.
             Ich habe nur ein Versprechen: Ein Abstimmungssystem, mit dem ich mir
             EURE Meinungen einholen kann, da IHR es seid, die das Schiff am
-            laufen halten.
+            Laufen halten.
           </p>
           <br />
 
@@ -97,6 +97,11 @@ export default function AbteilungssprecherPage() {
             <li>Lehrer-Awards bei den Spirit-of-HIT days!</li>
             <li>Organisation eines Erste-Hilfe Kurs</li>
           </ul>
+
+          <p className="text-[1.2rem] md:text-[1.7rem] md:mt-[2.5rem]">
+            Jeder von euch soll in die Entscheidungen der Abteilung
+            miteinbezogen werden!
+          </p>
 
           <SectionHeading
             textColor="text-myblack"
