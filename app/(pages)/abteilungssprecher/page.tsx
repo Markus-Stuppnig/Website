@@ -1,4 +1,15 @@
 import SectionHeading from "@/components/-General/SectionHeading";
+import Card from "@/components/-General/Card";
+
+const cardData = [
+  "3. Klässler können mit einem Buddy aus der 5. einen Tag die Spezialiserung schnuppern",
+  "Bessere Klassenräume (Ausstattung: Beamer, Steckdosen, Verlängerungskabel)",
+  "Überarbeitung der Aula im 9. und 11. Stock (Spinde, Möbel, Steckdosen, etc.)",
+  "Mehr Freiheit bei der Organisation des Meet & Greet",
+  "Organisation von Events (Kino, Ausflüge, etc.)",
+  "Lehrer-Awards bei den Spirit-of-HIT days!",
+  "Organisation eines Erste-Hilfe Kurses"
+]
 
 export default function AbteilungssprecherPage() {
   return (
@@ -59,18 +70,31 @@ export default function AbteilungssprecherPage() {
             Wahlprogramm
           </SectionHeading>
 
-          <p className="text-[1.2rem] md:text-[1.7rem] md:mt-[5rem]">
-            IHR seid die, die entscheiden sollten wo es hingeht. Deswegen
-            interessiert mich was EUCH wichtig ist und was EUCH am Herzen liegt.
-          </p>
-          <br />
+          
+          <div className="text-[1.2rem] md:text-[1.7rem] md:mt-[5rem]">
+            <Card 
+              description="IHR seid die, die entscheiden sollten wo es hingeht. Deswegen
+                  interessiert mich was EUCH wichtig ist und was EUCH am Herzen liegt." 
+              colorBg="bg-black" 
+              colorTxt="text-white"
+              extClassNamer="md:w-1/3 w-full" >
 
-          <p className="text-[1.2rem] md:text-[1.7rem] md:mt-[2.5rem]">
-            80% der Wahlversprechen der letzten Jahre wurden nicht eingehalten.
-            Ich habe nur ein Versprechen: Ein Abstimmungssystem, mit dem ich mir
-            EURE Meinungen einholen kann, da IHR es seid, die das Schiff am
-            Laufen halten.
-          </p>
+            </Card>
+          </div>
+
+
+          <div className="text-[1.2rem] md:text-[1.7rem] md:mt-[2.5rem]">
+            <Card description="80% der Wahlversprechen der letzten Jahre wurden nicht eingehalten.
+              Ich habe nur ein Versprechen: Ein Abstimmungssystem, mit dem ich mir
+              EURE Meinungen einholen kann, da IHR es seid, die das Schiff am
+              Laufen halten." 
+              colorBg="bg-black" 
+              colorTxt="text-white" 
+              extClassNamer="">
+
+            </Card>
+            
+          </div>
           <br />
 
           <p className="text-[1.2rem] md:text-[1.7rem] md:mt-[2.5rem]">
@@ -78,25 +102,13 @@ export default function AbteilungssprecherPage() {
           </p>
           <br />
 
-          <ul className="list-disc text-[1.2rem] md:text-[1.7rem] ml-[2rem] md:ml-[3rem]">
-            <li>Getränkeautomat vom 8. Stock in den 9. Stock verschieben</li>
-            <li>
-              3. Klässler können mit einem Buddy aus der 5. einen Tag die
-              Spezialiserung schnuppern
-            </li>
-            <li>
-              Bessere Klassenräume (Ausstattung: Beamer, Steckdosen,
-              Verlängerungskabel)
-            </li>
-            <li>
-              Überarbeitung der Aula im 9. und 11. Stock (Spinde, Möbel,
-              Steckdosen, etc.)
-            </li>
-            <li>Mehr Freiheit bei der Organisation des Meet & Greet</li>
-            <li>Organisation von Events (Kino, Ausflüge, etc.)</li>
-            <li>Lehrer-Awards bei den Spirit-of-HIT days!</li>
-            <li>Organisation eines Erste-Hilfe Kurs</li>
-          </ul>
+          {/* Card Container isntead of ul*/}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6">
+          {cardData.map((description, index) => (
+            <Card key={index} description={description} colorBg="bg-secondary" colorTxt="text-white"/>
+          ))}
+
+          </div>
 
           <p className="text-[1.2rem] md:text-[1.7rem] md:mt-[2.5rem]">
             Jeder von euch soll in die Entscheidungen der Abteilung
