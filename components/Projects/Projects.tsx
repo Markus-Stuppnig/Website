@@ -26,7 +26,7 @@ export default function Projects() {
 					<div className="w-full grid grid-cols-9">
 						<div className="col-start-1 col-span-8 flex flex-col">
 							<p className="font-medium text-2xl mb-[2rem]" dangerouslySetInnerHTML={{ __html: projectsData[3].description }} />
-							<Progressbar number={projectsData[3].progress} colorDone={"bg-primary"} colorNot={"#fff"} height={"[1.5rem]"} opacityDone={"40"} opacityNot={"20"} />
+							<Progressbar number={projectsData[3].progress} colorDone={"bg-black"} colorNot={"#fff"} height={"[1.5rem]"} opacityDone={"40"} opacityNot={"20"} />
 						</div>
 					</div>
 				</div>
@@ -41,7 +41,7 @@ export default function Projects() {
 					<div className="w-full grid grid-cols-9">
 						<div className="col-start-1 col-span-8 flex flex-col">
 							<p className="font-medium text-2xl mb-[2rem]" dangerouslySetInnerHTML={{ __html: projectsData[1].description }} />
-							<Progressbar number={projectsData[1].progress} colorDone={"bg-primary"} colorNot={"#fff"} height={"[1.5rem]"} opacityDone={"40"} opacityNot={"20"} />
+							<Progressbar number={projectsData[1].progress} colorDone={"bg-black"} colorNot={"#fff"} height={"[1.5rem]"} opacityDone={"40"} opacityNot={"20"} />
 						</div>
 					</div>
 				</div>
@@ -56,7 +56,7 @@ export default function Projects() {
 					<div className="w-full grid grid-cols-9">
 						<div className="col-start-1 col-span-8 flex flex-col">
 							<p className="font-medium text-2xl mb-[2rem]" dangerouslySetInnerHTML={{ __html: projectsData[2].description }} />
-							<Progressbar number={projectsData[2].progress} colorDone={"bg-primary"} colorNot={"#fff"} height={"[1.5rem]"} opacityDone={"40"} opacityNot={"20"} />
+							<Progressbar number={projectsData[2].progress} colorDone={"bg-black"} colorNot={"#fff"} height={"[1.5rem]"} opacityDone={"40"} opacityNot={"20"} />
 						</div>
 					</div>
 				</div>
@@ -71,7 +71,7 @@ export default function Projects() {
 					<div className="w-full grid grid-cols-9">
 						<div className="col-start-1 col-span-8 flex flex-col">
 							<p className="font-medium text-2xl mb-[2rem]" dangerouslySetInnerHTML={{ __html: projectsData[0].description }} />
-							<Progressbar number={projectsData[0].progress} colorDone={"bg-primary"} colorNot={"#fff"} height={"[1.5rem]"} opacityDone={"40"} opacityNot={"20"} />
+							<Progressbar number={projectsData[0].progress} colorDone={"bg-black"} colorNot={"#fff"} height={"[1.5rem]"} opacityDone={"40"} opacityNot={"20"} />
 						</div>
 					</div>
 				</div>
