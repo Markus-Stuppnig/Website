@@ -20,7 +20,7 @@ export default function Projects() {
 		<div className="grid grid-cols-3 mt-[10rem]">
 			<div className="col-span-3 md:col-span-2 bg-secondary text-mywhite py-[6rem] grid grid-cols-12 md:rounded-r-3xl">
 				<div className="col-start-2 md:col-start-3 col-span-10 md:col-span-8 flex flex-col">
-					<Link href={projectsData[3].link} target="_blank">
+					<Link href={projectsData[3].link} target="_blank" className="hover:underline duration-300">
 						<SectionHeading additional="font-semibold mb-5" textColor="text-mywhite">{projectsData[3].title}</SectionHeading>
 					</Link>
 					<div className="w-full grid grid-cols-9">
@@ -35,7 +35,7 @@ export default function Projects() {
 		<div className="grid grid-cols-3 mt-[10rem]">
 			<div className="col-span-3 md:col-start-2 md:col-span-2 bg-secondary text-mywhite py-[6rem] grid grid-cols-12 md:rounded-l-3xl">
 				<div className="col-start-2 md:col-start-3 col-span-10 md:col-span-8 flex flex-col">
-					<Link href={projectsData[1].link} target="_blank">
+					<Link href={projectsData[1].link} target="_blank" className="hover:underline duration-300">
 						<SectionHeading additional="font-semibold mb-5" textColor="text-mywhite">{projectsData[1].title}</SectionHeading>
 					</Link>
 					<div className="w-full grid grid-cols-9">
@@ -50,7 +50,7 @@ export default function Projects() {
 		<div className="grid grid-cols-3 mt-[10rem]">
 			<div className="col-span-3 md:col-span-2 bg-secondary text-mywhite py-[6rem] grid grid-cols-12 md:rounded-r-3xl">
 				<div className="col-start-2 md:col-start-3 col-span-10 md:col-span-8 flex flex-col">
-					<Link href={projectsData[2].link} target="_blank">
+					<Link href={projectsData[2].link} target="_blank" className="hover:underline duration-300">
 						<SectionHeading additional="font-semibold mb-5" textColor="text-mywhite">{projectsData[2].title}</SectionHeading>
 					</Link>
 					<div className="w-full grid grid-cols-9">
@@ -65,7 +65,7 @@ export default function Projects() {
 		<div className="grid grid-cols-3 mt-[10rem]">
 			<div className="col-span-3 md:col-start-2 md:col-span-2 bg-secondary text-mywhite py-[6rem] grid grid-cols-12 md:rounded-l-3xl">
 				<div className="col-start-2 md:col-start-3 col-span-10 md:col-span-8 flex flex-col">
-					<Link href={projectsData[0].link} target="_blank">
+					<Link href={projectsData[0].link} target="_blank" className="hover:underline duration-300">
 						<SectionHeading additional="font-semibold mb-5" textColor="text-mywhite">{projectsData[0].title}</SectionHeading>
 					</Link>
 					<div className="w-full grid grid-cols-9">
