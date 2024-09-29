@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-    --selected-text-color: #333333; /* Green */
+    --selected-text-color: #110831;
   }
   
   ::selection {
