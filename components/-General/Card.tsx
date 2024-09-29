@@ -7,14 +7,14 @@ interface CardProps {
   }
   
 interface CardSpecialFunctionProps extends CardProps {
-    extClassNamer: string; // Add the className prop
+    extClassNamer: string; 
 
 }
 
 
 export default function Card(props: CardProps | CardSpecialFunctionProps) {
     const isSpecialFunction = (props: any): props is CardSpecialFunctionProps => {
-        return props.extClassNamer !== undefined; // Check for className instead
+        return props.extClassNamer !== undefined;
       };
     
       const { description, colorBg, colorTxt, extClassNamer} = props;
