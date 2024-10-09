@@ -105,7 +105,6 @@ export default function AbteilungssprecherPage() {
           </p>
           <br />
 
-          {/* Card Container isntead of ul*/}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6">
           {cardData.map((description, index) => (
             <Card key={index} description={description} colorBg="bg-secondary" colorTxt="text-white"/>
@@ -125,13 +124,20 @@ export default function AbteilungssprecherPage() {
           >
             Über mich
           </SectionHeading>
-          <p className="text-[1.2rem] md:text-[1.7rem] mt-[1rem] mb-[3rem] md:mb-[7rem]">
-            Ich möchte dieser Schule was zurückgeben, nachdem der Herr Professor
-            Koppensteiner, der Herr Professor Brein, aber auch zahlreiche andere
-            Personen sich für mich und mein Auslandssemester eingesetzt haben.
-            Mit dem Amt als Abteilungssprecher möchte ich mich dafür bedanken
-            und euch auch eure Träume und Wünsche erfüllen.
+          <div className="mt-10">
+            <p className="text-[1.2rem] md:text-[1.7rem] mb-6">
+              <span className="text-primary font-bold text-[1.5rem] md:text-[2rem]">„Ich möchte etwas zurückgeben“</span> – Besonders an Personen wie Herrn Professor Koppensteiner, der mich auf meinem Weg unterstützt hat.
+            </p>
+            <p className="text-[1.2rem] md:text-[1.7rem] mb-6">
+              Diese Unterstützung hat mich motiviert, eure <span className="text-secondary font-bold">Wünsche und Träume</span> in die Tat umzusetzen. Deshalb kandidiere ich für das Amt des Abteilungssprechers.
+            </p>
+          </div>
+
+
+          <p className="text-[1.2rem] md:text-[1.7rem] mt-10">
+          💡 <span className="font-semibold">Mein Ziel:</span> Die Schule durch Engagement und gute Ideen zu einem noch besseren Ort zu machen.
           </p>
+
         </div>
       </section>
     </main>
