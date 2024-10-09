@@ -70,16 +70,13 @@ export default function AbteilungssprecherPage() {
             Wahlprogramm
           </SectionHeading>
 
-          {/**  
-            * TODO:
-            * Cards sind nebeneinander und groß. Haben ein Emoji
-            */}
+          
           <div className="">
 
             <div className="text-[1.2rem] md:text-[1.7rem] md:mt-[5rem]">
               
               <Card 
-                description="IHR seid die, die entscheiden sollten wo es hingeht. Deswegen
+                description="🫵 IHR seid die, die entscheiden sollten wo es hingeht. Deswegen
                     interessiert mich was EUCH wichtig ist und was EUCH am Herzen liegt." 
                 colorBg="bg-black" 
                 colorTxt="text-white">
@@ -89,7 +86,7 @@ export default function AbteilungssprecherPage() {
 
 
             <div className="text-[1.2rem] md:text-[1.7rem] md:mt-[2.5rem]">
-              <Card description="80% der Wahlversprechen der letzten Jahre wurden nicht eingehalten.
+              <Card description="💯 80% der Wahlversprechen der letzten Jahre wurden nicht eingehalten.
                 Ich habe nur ein Versprechen: Ein Abstimmungssystem, mit dem ich mir
                 EURE Meinungen einholen kann, da IHR es seid, die das Schiff am
                 Laufen halten." 

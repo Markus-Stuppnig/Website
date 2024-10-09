@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { FaInstagram } from "react-icons/fa"; 
+import { FaGithub, FaInstagram } from "react-icons/fa"; 
 
 export default function Footer() {
   const [currentYear, setCurrentYear] = useState('');
@@ -31,6 +31,12 @@ export default function Footer() {
         <div className="flex items-center space-x-4">
           <Link href="https://instagram.com/markusstuppnig" target="_blank" className="flex hover:text-black transition-colors">
             <FaInstagram size={24} /> 
+          </Link>
+        </div>
+
+        <div className="flex items-center space-x-4">
+          <Link href="https://github.com/Markus-Stuppnig" target="_blank" className="flex hover:text-black transition-colors">
+            <FaGithub size={24} /> 
           </Link>
         </div>
 
