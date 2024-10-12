@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --selected-text-color: #110831;
+  }
+  
+  ::selection {
+    background-color: var(--selected-text-color);
+    color: white;
+  }
+  
