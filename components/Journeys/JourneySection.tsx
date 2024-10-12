@@ -65,7 +65,7 @@ export default function JourneySection({
               />
             </div>
           </div>
-          <div className="hidden xl:block w-2/3 xl:w-2/5 flex justify-center xl:justify-start">
+          <div className="xl:block w-2/3 xl:w-2/5 flex justify-center xl:justify-start">
             <div className={`${journey.margin}`}>
               <Image
                 width={journey.width}

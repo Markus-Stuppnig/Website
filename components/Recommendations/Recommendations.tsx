@@ -15,9 +15,9 @@ export default function Recommendations() {
         <SectionHeading className="text-primary text-[2.2rem] mb-[2rem] font-semibold">
           Recommendations
         </SectionHeading>
-        <p className="text-2xl font-medium text-primary">
-          Here, you’ll see my recommendations
-        </p>
+        <SectionHeading className="!text-2xl !font-medium text-primary">
+          What people say about me
+        </SectionHeading>
         <SectionDivider height="h-[1rem] md:h-[4rem]" />
 
         {recommendationsData.map((recommendation, index) => (

@@ -10,7 +10,9 @@ export default function SectionHeading({
   className,
 }: SectionHeadingProps) {
   return (
-    <h2 className={`text-[2.2rem] md:text-[3rem] capitalize ${className}`}>
+    <h2
+      className={`transform transition-transform duration-200 hover:scale-105 cursor-pointertext-[2.2rem] md:text-[3rem] capitalize ${className}`}
+    >
       {children}
     </h2>
   );

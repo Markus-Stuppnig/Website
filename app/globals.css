@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --selected-text-color: #4a65ff;
+}
+
+::selection {
+    background-color: var(--selected-text-color);
+    color: white;
+}

@@ -38,6 +38,7 @@ export default function Experience() {
                 background: "white",
                 fontSize: "1.5rem",
               }}
+              className="transform transition-transform duration-200 hover:scale-105 cursor-pointer"
             >
               <ExperienceCard experience={item} />
             </VerticalTimelineElement>
