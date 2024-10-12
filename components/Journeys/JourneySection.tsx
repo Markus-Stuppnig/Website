@@ -56,10 +56,7 @@ export default function JourneySection({
           </div>
           <div className="w-full xl:w-3/5 xl:mr-[6rem] flex justify-end items-end mt-[5rem] xl:mt-[0rem]">
             <div className="flex flex-col xl:mr-[4rem] w-5/6 xl:w-2/3 xl:justify-start xl:items-start text-start">
-              <SectionHeading
-                additional="font-semibold mb-5"
-                textColor="text-primary"
-              >
+              <SectionHeading className="text-primary font-semibold mb-5">
                 {journey.title}
               </SectionHeading>
               <p
