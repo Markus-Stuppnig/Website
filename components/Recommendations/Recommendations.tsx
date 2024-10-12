@@ -23,15 +23,15 @@ export default function Recommendations() {
         {recommendationsData.map((recommendation, index) => (
           <div
             key={`recommendation${index}`}
-            className="flex flex-col justify-center items-center w-[300rem] transform rotate-[3.5deg] bg-secondary shadow-3xl py-[6rem] text-white"
+            className="flex flex-col justify-center items-center w-full shadow-inner shadow-3xl py-[5vw] text-white bg-secondary"
           >
-            <div className="flex flex-col items-center justify-center transform rotate-[-3.5deg] w-11/12 md:w-[45rem] lg:w-[80rem] bg-white rounded-3xl shadow-xl backdrop-filter backdrop-blur-lg bg-opacity-20">
+            <div className="flex flex-col items-center justify-center w-11/12 md:w-[85vw]">
               <div className="flex flex-col ml-[1rem] md:ml-[2rem] text-start">
-                <div className="flex flex-row mt-[1rem] md:mt-[2rem] justify-between">
+                <div className="flex flex-row">
                   <Link
                     href={recommendation.person.link}
                     target="_blank"
-                    className="flex flex-row"
+                    className="flex flex-row transform"
                   >
                     <div>
                       <Image
@@ -57,12 +57,17 @@ export default function Recommendations() {
                   <Link
                     href={recommendation.person.link}
                     target="_blank"
-                    className="mr-10 hidden md:block"
+                    className="mt-5 ml-10 hidden md:block transform transition-transform duration-200 hover:scale-105"
                   >
-                    <SocialIcon as="div" network="linkedin" />
+                    <SocialIcon
+                      as="div"
+                      url={recommendation.person.link}
+                      bgColor="#fff"
+                      fgColor="#4a65ff"
+                    />
                   </Link>
                 </div>
-                <div className="mt-10 mb-10 mr-4 ml-0 sm:mr-10 sm:ml-0">
+                <div className="mt-10 sm:mr-10">
                   <p
                     className="text-xl md:font-normal"
                     dangerouslySetInnerHTML={{ __html: recommendation.text }}
