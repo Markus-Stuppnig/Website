@@ -21,7 +21,7 @@ export default function ProjectCard({
           <div className="col-span-3 md:col-span-2 bg-secondary text-white py-[6rem] grid grid-cols-12 md:rounded-r-3xl">
             <div className="col-start-2 md:col-start-3 col-span-10 md:col-span-8 flex flex-col">
               <Link href={project.link} target="_blank">
-                <SectionHeading className="text-white font-semibold mb-5">
+                <SectionHeading className="text-white font-semibold mb-5 hover:text-black duration-100">
                   {project.title}
                 </SectionHeading>
               </Link>
@@ -35,7 +35,7 @@ export default function ProjectCard({
                   />
                   <Progressbar
                     number={project.progress}
-                    colorDone={"bg-primary"}
+                    colorDone={"bg-black"}
                     colorNot={"#fff"}
                     height={"[1.5rem]"}
                     opacityDone={"40"}
@@ -52,7 +52,7 @@ export default function ProjectCard({
           <div className="col-span-3 md:col-start-2 md:col-span-2 bg-secondary text-white py-[6rem] grid grid-cols-12 md:rounded-l-3xl">
             <div className="col-start-2 md:col-start-3 col-span-10 md:col-span-8 flex flex-col">
               <Link href={project.link} target="_blank">
-                <SectionHeading className="text-white font-semibold mb-5">
+                <SectionHeading className="text-white font-semibold mb-5 hover:text-black duration-100">
                   {project.title}
                 </SectionHeading>
               </Link>
@@ -66,7 +66,7 @@ export default function ProjectCard({
                   />
                   <Progressbar
                     number={project.progress}
-                    colorDone={"bg-primary"}
+                    colorDone={"bg-black"}
                     colorNot={"#fff"}
                     height={"[1.5rem]"}
                     opacityDone={"40"}

@@ -1,5 +1,16 @@
-import SectionDivider from "@/components/miscellaneous/SectionDivider";
 import SectionHeading from "@/components/miscellaneous/SectionHeading";
+import SectionDivider from "@/components/miscellaneous/SectionDivider";
+import Card from "@/components/miscellaneous/Card";
+
+const cardData = [
+  "3. Klässler können mit einem Buddy aus der 5. einen Tag die Spezialiserung schnuppern",
+  "Bessere Klassenräume (Ausstattung: Beamer, Steckdosen, Verlängerungskabel)",
+  "Überarbeitung der Aula im 9. und 11. Stock (Spinde, Möbel, Steckdosen, etc.)",
+  "Mehr Freiheit bei der Organisation des Meet & Greet",
+  "Organisation von Events (Kino, Ausflüge, etc.)",
+  "Lehrer-Awards bei den Spirit-of-HIT days!",
+  "Organisation eines Erste-Hilfe Kurses"
+]
 
 export default function AbteilungssprecherPage() {
   return (
@@ -46,22 +57,40 @@ export default function AbteilungssprecherPage() {
         <p className="italic text-lg">- Abraham Lincoln</p>
 
         <div className="flex flex-col h-full mx-[1rem] md:mx-[7rem]">
-          <SectionHeading className="text-black text-[2rem] md:text-[3rem] font-semibold mb-5 mt-10">
+          <SectionHeading
+            className="text-[1.8rem] md:text-[3.5rem] font-semibold mb-5 text-black"
+          >
             Wahlprogramm
           </SectionHeading>
 
-          <p className="text-[1.2rem] md:text-[1.7rem] md:mt-[5rem]">
-            IHR seid die, die entscheiden sollten wo es hingeht. Deswegen
-            interessiert mich was EUCH wichtig ist und was EUCH am Herzen liegt.
-          </p>
-          <br />
+          
+          <div className="">
 
-          <p className="text-[1.2rem] md:text-[1.7rem] md:mt-[2.5rem]">
-            80% der Wahlversprechen der letzten Jahre wurden nicht eingehalten.
-            Ich habe nur ein Versprechen: Ein Abstimmungssystem, mit dem ich mir
-            EURE Meinungen einholen kann, da IHR es seid, die das Schiff am
-            Laufen halten.
-          </p>
+            <div className="text-[1.2rem] md:text-[1.7rem] md:mt-[5rem]">
+              
+              <Card 
+                description="🫵 IHR seid die, die entscheiden sollten wo es hingeht. Deswegen
+                    interessiert mich was EUCH wichtig ist und was EUCH am Herzen liegt." 
+                colorBg="bg-black" 
+                colorTxt="text-white">
+
+              </Card>
+            </div>
+
+
+            <div className="text-[1.2rem] md:text-[1.7rem] md:mt-[2.5rem]">
+              <Card description="💯 80% der Wahlversprechen der letzten Jahre wurden nicht eingehalten.
+                Ich habe nur ein Versprechen: Ein Abstimmungssystem, mit dem ich mir
+                EURE Meinungen einholen kann, da IHR es seid, die das Schiff am
+                Laufen halten." 
+                colorBg="bg-black" 
+                colorTxt="text-white">
+
+              </Card>
+              
+            </div>
+          </div>
+
           <br />
 
           <p className="text-[1.2rem] md:text-[1.7rem] md:mt-[2.5rem]">
@@ -69,44 +98,40 @@ export default function AbteilungssprecherPage() {
           </p>
           <br />
 
-          <ul className="list-disc text-[1.2rem] md:text-[1.7rem] ml-[2rem] md:ml-[3rem]">
-            <li>Getränkeautomat vom 8. Stock in den 9. Stock verschieben</li>
-            <li>
-              3. Klässler können mit einem Buddy aus der 5. einen Tag die
-              Spezialiserung schnuppern
-            </li>
-            <li>
-              Bessere Klassenräume (Ausstattung: Beamer, Steckdosen,
-              Verlängerungskabel)
-            </li>
-            <li>
-              Überarbeitung der Aula im 9. und 11. Stock (Spinde, Möbel,
-              Steckdosen, etc.)
-            </li>
-            <li>Mehr Freiheit bei der Organisation des Meet & Greet</li>
-            <li>Organisation von Events (Kino, Ausflüge, etc.)</li>
-            <li>Lehrer-Awards bei den Spirit-of-HIT days!</li>
-            <li>Organisation eines Erste-Hilfe Kurs</li>
-          </ul>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6">
+          {cardData.map((description, index) => (
+            <Card key={index} description={description} colorBg="bg-secondary" colorTxt="text-white"/>
+          ))}
+
+          </div>
 
           <p className="text-[1.2rem] md:text-[1.7rem] md:mt-[2.5rem]">
             Jeder von euch soll in die Entscheidungen der Abteilung
             miteinbezogen werden!
           </p>
 
-          <SectionHeading className="text-black text-[2rem] md:text-[3rem] font-semibold mt-[3rem] md:mt-[6rem]">
+          <SectionDivider />
+          <SectionHeading
+            className="text-[1.8rem] md:text-[3.5rem] font-semibold mb-5 text-black"
+          >
             Über mich
           </SectionHeading>
-          <p className="text-[1.2rem] md:text-[1.7rem] mt-[1rem] mb-[3rem] md:mb-[7rem]">
-            Ich möchte dieser Schule was zurückgeben, nachdem der Herr Professor
-            Koppensteiner, der Herr Professor Brein, aber auch zahlreiche andere
-            Personen sich für mich und mein Auslandssemester eingesetzt haben.
-            Mit dem Amt als Abteilungssprecher möchte ich mich dafür bedanken
-            und euch auch eure Träume und Wünsche erfüllen.
+          <div className="mt-10">
+            <p className="text-[1.2rem] md:text-[1.7rem] mb-6">
+              <span className="text-primary font-bold text-[1.5rem] md:text-[2rem]">„Ich möchte etwas zurückgeben“</span> – Besonders an Personen wie Herrn Professor Koppensteiner, der mich auf meinem Weg unterstützt hat.
+            </p>
+            <p className="text-[1.2rem] md:text-[1.7rem] mb-6">
+              Diese Unterstützung hat mich motiviert, eure <span className="text-secondary font-bold">Wünsche und Träume</span> in die Tat umzusetzen. Deshalb kandidiere ich für das Amt des Abteilungssprechers.
+            </p>
+          </div>
+
+
+          <p className="text-[1.2rem] md:text-[1.7rem] mt-10">
+          💡 <span className="font-semibold">Mein Ziel:</span> Die Schule durch Engagement und gute Ideen zu einem noch besseren Ort zu machen.
           </p>
+
         </div>
       </section>
-      <SectionDivider />
     </main>
   );
 }
