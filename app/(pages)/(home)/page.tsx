@@ -1,19 +1,19 @@
-import SectionDivider from "@/components/-General/SectionDivider";
 import Experience from "@/components/Experience/Experience";
 import About from "@/components/About/About";
 import Recommendations from "@/components/Recommendations/Recommendations";
 import Introduction from "@/components/Introduction/Introduction";
+import SectionDivider from "@/components/miscellaneous/SectionDivider";
 
 export default function Home() {
   return (
     <main>
       <About />
       <Introduction />
-      <SectionDivider />
+      <SectionDivider height="h-[5rem] md:h-[10rem]" />
       <Experience />
-      <SectionDivider />
+      <SectionDivider height="h-[5rem] md:h-[10rem]" />
       <Recommendations />
-      <SectionDivider />
+      <SectionDivider height="h-[5rem] md:h-[20rem]" />
     </main>
   );
 }

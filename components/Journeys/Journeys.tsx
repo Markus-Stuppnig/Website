@@ -1,8 +1,8 @@
 import React from "react";
-import SectionHeading from "@/components/-General/SectionHeading";
 import { journeysData } from "./journeysData";
-import SectionDivider from "../-General/SectionDivider";
-import JourneySection from "./JourneySection";
+import JourneySection from "@/components/Journeys/JourneySection";
+import SectionHeading from "@/components/miscellaneous/SectionHeading";
+import SectionDivider from "@/components/miscellaneous/SectionDivider";
 
 export default function Journeys() {
   return (
@@ -11,11 +11,11 @@ export default function Journeys() {
       className="mt-[5rem] flex flex-col justify-center items-center"
     >
       <div className="mt-[4rem] mb-[14rem] flex justify-center items-center w-[300rem] h-[35rem] bg-secondary transform rotate-[3.5deg]">
-        <div className="flex flex-col w-full text-mywhite text-center transform -rotate-[3.5deg]">
-          <SectionHeading additional="font-semibold mb-5">
+        <div className="flex flex-col w-full text-white text-center transform -rotate-[3.5deg]">
+          <SectionHeading className="font-semibold mb-5">
             Journeys
           </SectionHeading>
-          <h4 className="text-2xl text-mywhite">This page is about my life</h4>
+          <h4 className="text-2xl text-white">This page is about my life</h4>
         </div>
       </div>
 

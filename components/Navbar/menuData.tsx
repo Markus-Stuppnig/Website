@@ -12,15 +12,10 @@ const menuData: Menu[] = [
     path: "/journeys",
   },
   {
-    title: "Abteilungssprecher",
+    title: "Department Representative",
     newTab: false,
-    path: "/abteilungssprecher",
+    path: "/representative",
   },
-  // {
-  //   title: "Awards",
-  //   newTab: false,
-  //   path: "/awards"
-  // },
 ];
 
 export default menuData;

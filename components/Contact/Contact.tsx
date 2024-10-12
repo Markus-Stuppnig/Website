@@ -1,10 +1,10 @@
 "use client";
 
 import React from "react";
-import SectionHeading from "@/components/-General/SectionHeading";
 import { useForm } from "react-hook-form";
 import { sendEmail } from "@/utils/send-email";
 import { FaPaperPlane } from "react-icons/fa6";
+import SectionHeading from "../miscellaneous/SectionHeading";
 
 export type FormData = {
   email: string;
@@ -31,10 +31,7 @@ export default function Contact() {
       <div className="w-full flex justify-center">
         <div className="flex flex-col justify-start w-11/12 max-w-[50rem] xl:max-w-[60rem]">
           <div className="flex flex-col mb-[2rem] -mt-[10rem]">
-            <SectionHeading
-              additional="font-semibold mb-5"
-              textColor="text-secondary"
-            >
+            <SectionHeading className="text-secondary font-semibold mb-5">
               Contact me
             </SectionHeading>
 

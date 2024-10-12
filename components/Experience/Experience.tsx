@@ -6,23 +6,24 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { experiencesData } from "./experienceData";
-import SectionHeading from "../-General/SectionHeading";
-import ExperienceCard from "./ExperienceCard";
+import { experiencesData } from "@/components/Experience/experienceData";
+import ExperienceCard from "@/components/Experience/ExperienceCard";
+import SectionHeading from "@/components/miscellaneous/SectionHeading";
 
 export default function Experience() {
-  
   return (
     <div>
-      <SectionHeading additional="mb-[5rem] font-semibold text-center" textColor="text-primary">My experience</SectionHeading>
+      <SectionHeading className="text-primary mb-[5rem] font-semibold text-center">
+        My experience
+      </SectionHeading>
       <VerticalTimeline lineColor="#74c1fc" animate={true}>
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
               visible={true}
               contentStyle={{
-                background: 'rgba(243, 244, 246, 0.4)',
-                boxShadow: '0px 0px 10px 4px rgba(0, 0, 0, 0.1)',
+                background: "rgba(243, 244, 246, 0.4)",
+                boxShadow: "0px 0px 10px 4px rgba(0, 0, 0, 0.1)",
                 border: "1px solid rgba(0, 0, 0, 0.05)",
                 textAlign: "left",
                 padding: "1.3rem 2rem",
@@ -34,7 +35,7 @@ export default function Experience() {
               date={item.date}
               icon={item.icon}
               iconStyle={{
-                background:"white",
+                background: "white",
                 fontSize: "1.5rem",
               }}
             >
@@ -43,6 +44,9 @@ export default function Experience() {
           </React.Fragment>
         ))}
       </VerticalTimeline>
+      <div className="flex justify-center w-full">
+        <div className="w-3 h-3 rounded-full bg-primary"></div>
+      </div>
     </div>
   );
 }

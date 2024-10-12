@@ -1,4 +1,5 @@
-import SectionHeading from "@/components/-General/SectionHeading";
+import SectionDivider from "@/components/miscellaneous/SectionDivider";
+import SectionHeading from "@/components/miscellaneous/SectionHeading";
 
 export default function AbteilungssprecherPage() {
   return (
@@ -8,17 +9,11 @@ export default function AbteilungssprecherPage() {
         className="mt-[5rem] flex flex-col justify-center items-center"
       >
         <div className="mt-[4rem] mb-[8rem] flex justify-center items-center w-[300rem] h-[22rem] md:h-[30rem] bg-secondary transform rotate-[3.5deg]">
-          <div className="flex flex-col w-full text-mywhite text-center transform -rotate-[3.5deg]">
-            <SectionHeading
-              size="text-[1.8rem] md:text-[3.5rem]"
-              additional="font-semibold mb-5"
-            >
+          <div className="flex flex-col w-full text-white text-center transform -rotate-[3.5deg]">
+            <SectionHeading className="text-[1.8rem] md:text-[3.5rem] font-semibold mb-5">
               Abteilungssprecherwahl
             </SectionHeading>
-            <SectionHeading
-              size="text-[1.8rem] md:text-[3.5rem]"
-              additional="font-semibold"
-            >
+            <SectionHeading className="text-[1.8rem] md:text-[3.5rem] font-semibold">
               STUPPNIG MARKUS
             </SectionHeading>
           </div>
@@ -51,11 +46,7 @@ export default function AbteilungssprecherPage() {
         <p className="italic text-lg">- Abraham Lincoln</p>
 
         <div className="flex flex-col h-full mx-[1rem] md:mx-[7rem]">
-          <SectionHeading
-            textColor="text-myblack"
-            size="text-[2rem] md:text-[3rem]"
-            additional="font-semibold mb-5 mt-10"
-          >
+          <SectionHeading className="text-black text-[2rem] md:text-[3rem] font-semibold mb-5 mt-10">
             Wahlprogramm
           </SectionHeading>
 
@@ -103,11 +94,7 @@ export default function AbteilungssprecherPage() {
             miteinbezogen werden!
           </p>
 
-          <SectionHeading
-            textColor="text-myblack"
-            size="text-[2rem] md:text-[3rem]"
-            additional="font-semibold mt-[3rem] md:mt-[6rem]"
-          >
+          <SectionHeading className="text-black text-[2rem] md:text-[3rem] font-semibold mt-[3rem] md:mt-[6rem]">
             Über mich
           </SectionHeading>
           <p className="text-[1.2rem] md:text-[1.7rem] mt-[1rem] mb-[3rem] md:mb-[7rem]">
@@ -119,6 +106,7 @@ export default function AbteilungssprecherPage() {
           </p>
         </div>
       </section>
+      <SectionDivider />
     </main>
   );
 }
