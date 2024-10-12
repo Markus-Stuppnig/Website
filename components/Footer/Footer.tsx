@@ -1,11 +1,11 @@
-'use client'; 
+"use client";
 
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { FaGithub, FaInstagram } from "react-icons/fa"; 
 
 export default function Footer() {
-  const [currentYear, setCurrentYear] = useState('');
+  const [currentYear, setCurrentYear] = useState("");
 
   useEffect(() => {
     const getCurrentYear = () => {

@@ -1,4 +1,3 @@
-import SectionDivider from "@/components/-General/SectionDivider";
 import Contact from "@/components/Contact/Contact";
 
 export default function Home() {

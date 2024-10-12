@@ -1,9 +1,11 @@
+import SectionHeading from "@/components/miscellaneous/SectionHeading";
+
 export default function NotFoundPage() {
-	return (
-		<main className="mt-10 relative">
-			<div className="w-full flex justify-center z-[50]">
-				<h1 className="text-3xl">Page not found 404</h1>
-			</div>
-		</main>
-	);
+  return (
+    <main className="h-[calc(100vh-192px)] flex items-center justify-center align-middle">
+      <SectionHeading className="text-primary text-xl font-bold mt-[-100px]">
+        Page not found 404
+      </SectionHeading>
+    </main>
+  );
 }
