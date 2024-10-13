@@ -39,6 +39,7 @@ export default function Contact() {
             size="text-base md:text-basePlus"
             weight="font-normal"
             capitalize={false}
+            zoom={false}
           >
             Please contact me directly at{" "}
             <a className="underline" href="mailto:markus@stuppnig.net">
@@ -48,7 +49,7 @@ export default function Contact() {
           </Heading>
         </div>
         <form
-          className="flex flex-col w-full"
+          className="flex flex-col w-full animate-slidein"
           onSubmit={handleSubmit(onSubmit)}
         >
           <div className="mb-4">

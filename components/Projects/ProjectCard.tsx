@@ -14,7 +14,7 @@ export default function ProjectCard({
   index: number;
 }) {
   return (
-    <section id={"project" + index} className="mt-[5rem] zoom-on-hover-200">
+    <section id={"project" + index} className="mt-[5rem] zoom-on-hover-small">
       {index % 2 == 0 && (
         <div className="grid grid-cols-3 mt-[10rem]">
           <div className="col-span-3 md:col-span-2 bg-secondary text-white py-[6rem] grid grid-cols-12 md:rounded-r-3xl">

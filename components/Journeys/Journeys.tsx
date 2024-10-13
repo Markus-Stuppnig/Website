@@ -34,7 +34,7 @@ export default function Journeys() {
       <div className="flex flex-col h-full">
         {journeysData.map((item, index) => (
           <React.Fragment key={index}>
-            <JourneySection journey={item} indexOfJourney={index} />
+            <JourneySection journey={item} index={index} />
             <SectionDivider height="h-[15rem]" />
           </React.Fragment>
         ))}
