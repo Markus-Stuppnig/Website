@@ -1,12 +1,54 @@
-import React from "react";
+"use client";
 
-export default function Progressbar({number, colorDone, colorNot, height, opacityDone, opacityNot}: {number: number, colorDone: string, colorNot: string, height: string, opacityDone: string, opacityNot: string}) {
+import React, { useEffect, useRef, useState } from "react";
 
-	return (
-		<div className={`h-${height} rounded-lg overflow-hidden w-full md:backdrop-filter md:backdrop-blur-lg md:bg-opacity-${opacityNot}`} style={{ backgroundColor: colorNot }}>
-      		<div className={`h-full flex items-center md:backdrop-filter md:backdrop-blur-lg md:bg-opacity-${opacityDone} ${colorDone}`} style={{ width: `${number}%` }}>
-				<p className="ml-5">{number} %</p>
-	  		</div>
-    	</div>
-  	);
+export default function Progressbar({
+  number,
+  colorDone,
+  colorNot,
+}: {
+  number: number;
+  colorDone: string;
+  colorNot: string;
+}) {
+  const [inView, setInView] = useState(false);
+  const progressBarRef = useRef<HTMLDivElement>(null);
+
+  // IntersectionObserver is neccessary to trigger the animation
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setInView(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.3 },
+    );
+
+    if (progressBarRef.current) {
+      observer.observe(progressBarRef.current);
+    }
+
+    return () => {
+      if (progressBarRef.current) {
+        observer.unobserve(progressBarRef.current);
+      }
+    };
+  }, []);
+
+  return (
+    <div
+      ref={progressBarRef}
+      className={`h-[1.5rem] rounded-lg overflow-hidden w-full cursor-pointer zoom-on-hover-200`}
+      style={{ backgroundColor: colorNot }}
+    >
+      <div
+        className={`h-[1.5rem] flex items-center ${colorDone} transition-all duration-1000 ease-out`}
+        style={{ width: inView ? `${number}%` : "0%" }}
+      >
+        <span className="ml-5">{number} %</span>
+      </div>
+    </div>
+  );
 }
