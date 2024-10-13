@@ -42,18 +42,17 @@ const config: Config = {
     },
     extend: {
       fontSize: {
-        metatitle: ["12px", "20px"],
-        sectiontitle: ["14px", "22px"],
-        regular: ["16px", "26px"],
-        metatitle3: ["18px", "26px"],
-        metatitle2: ["20px", "32px"],
-        para2: ["22px", "35px"],
-        itemtitle: ["26px", "32px"],
-        itemtitle2: ["24px", "32px"],
-        hero: ["44px", "58px"],
-        sectiontitle3: ["44px", "55px"],
-        sectiontitle2: ["40px", "52px"],
-        sectiontitle4: ["34px", "48px"],
+        xs: ["13px", "21px"],
+        sm: ["18px", "26px"],
+        base: ["20px", "28px"],
+        basePlus: ["23px", "31px"],
+        mdMinus: ["25px", "33px"],
+        md: ["27px", "35px"],
+        mdPlus: ["30px", "38px"],
+        lg: ["33px", "41px"],
+        xl: ["38px", "46px"],
+        "2xl": ["43px", "51px"],
+        "3xl": ["48px", "56px"],
       },
       spacing: {
         4.5: "1.125rem",
@@ -118,18 +117,23 @@ const config: Config = {
         65: ".65",
       },
       transitionProperty: { width: "width" },
+      transitionDuration: {
+        "60": "60ms",
+      },
       keyframes: {
-        line: {
-          "0%, 100%": { transform: "translateY(200%)" },
-          "50%": { transform: "translateY(-200%)" },
+        slidein: {
+          from: {
+            opacity: "0",
+            transform: "translateY(-10px)",
+          },
+          to: {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
         },
       },
       animation: {
-        line1: "line 4s linear infinite",
-        line2: "line 5s linear infinite",
-        line3: "line 6s linear infinite",
-        line4: "line 7s linear infinite",
-        line5: "line 8s linear infinite",
+        slidein: "slidein 800ms ease-in-out",
       },
     },
   },

@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { data } from "@/components/miscellaneous/generalData";
-import SectionHeading from "../miscellaneous/SectionHeading";
+import Heading from "../miscellaneous/Heading";
 
 export default function About() {
   return (
@@ -15,23 +15,31 @@ export default function About() {
         <a
           href="https://en.wikipedia.org/wiki/Carpe_diem"
           target="_blank"
-          className="flex w-1/2 items-center justify-center ml-[10vh]"
+          className="flex w-1/2 items-center justify-center ml-[10vh] animate-slidein"
         >
           <Image
             src={data.slogan_img}
             alt="The Future is Cloud Text"
             width={data.slogan_img_size}
             height={100}
-            className="transform transition-transform duration-200 hover:scale-105"
+            className="zoom-on-hover-200"
           />
         </a>
         <div className="flex flex-col w-1/2 text-center mr-[10vh]">
-          <SectionHeading className="text-secondary mt-[10rem] font-semibold mb-5 transform transition-transform duration-200 hover:scale-105 cursor-pointer">
+          <Heading
+            color="secondary"
+            size="text-xl md:text-3xl"
+            className="mt-[10rem] mb-5"
+          >
             {data.name}
-          </SectionHeading>
-          <h4 className="text-3xl font-medium text-secondary transform transition-transform duration-200 hover:scale-105 cursor-pointer">
+          </Heading>
+          <Heading
+            color="secondary"
+            size="text-md md:text-mdPlus"
+            weight="font-medium"
+          >
             {data.main_title}
-          </h4>
+          </Heading>
         </div>
       </div>
     </section>

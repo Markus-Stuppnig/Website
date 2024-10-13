@@ -8,14 +8,24 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/components/Experience/experienceData";
 import ExperienceCard from "@/components/Experience/ExperienceCard";
-import SectionHeading from "@/components/miscellaneous/SectionHeading";
+import Heading from "@/components/miscellaneous/Heading";
 
 export default function Experience() {
   return (
     <div>
-      <SectionHeading className="text-primary mb-[5rem] font-semibold text-center">
+      <Heading
+        color="primary"
+        size="text-xl md:text-3xl"
+        className="mb-[5rem] text-center"
+      >
         My experience
-      </SectionHeading>
+      </Heading>
+      <div className="flex justify-center w-full">
+        <span className="relative flex h-4 w-4">
+          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+          <span className="relative inline-flex rounded-full h-4 w-4 bg-primary"></span>
+        </span>
+      </div>
       <VerticalTimeline lineColor="#74c1fc" animate={true}>
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>
@@ -38,7 +48,7 @@ export default function Experience() {
                 background: "white",
                 fontSize: "1.5rem",
               }}
-              className="transform transition-transform duration-200 hover:scale-105 cursor-pointer"
+              className="zoom-on-hover-200 cursor-pointer"
             >
               <ExperienceCard experience={item} />
             </VerticalTimelineElement>
@@ -46,7 +56,10 @@ export default function Experience() {
         ))}
       </VerticalTimeline>
       <div className="flex justify-center w-full">
-        <div className="w-3 h-3 rounded-full bg-primary"></div>
+        <span className="relative flex h-4 w-4">
+          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+          <span className="relative inline-flex rounded-full h-4 w-4 bg-primary"></span>
+        </span>
       </div>
     </div>
   );

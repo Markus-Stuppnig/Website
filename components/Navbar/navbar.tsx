@@ -7,9 +7,7 @@ import menuData from "./menuData";
 import { motion, AnimatePresence } from "framer-motion";
 import ContactUsButton from "@/components/ContactButton/ContactButton";
 import { data } from "@/components/miscellaneous/generalData";
-
-const zoomScale = 1.04;
-const zoomDuration = 0.06;
+import Heading from "../miscellaneous/Heading";
 
 const navbarItemsDefault = "text-primary";
 const navbarItemsSelected = "text-secondary";
@@ -23,44 +21,36 @@ const Header = () => {
   return (
     <div className="z-[9999] w-full h-25 bg-white sticky">
       <div className="container mx-auto px-4 h-full">
-        <div className="flex justify-between items-center h-full text-xl">
-          <motion.div
-            initial={{ scale: 1 }}
-            whileHover={{ scale: zoomScale }}
-            transition={{ duration: zoomDuration }}
-          >
-            <Link
-              href="/"
+        <div className="flex justify-between items-center h-full text-base">
+          <Link href="/">
+            <Heading
+              size="text-base"
               className={
                 pathUrl === "/"
-                  ? `${navbarItemsSelected} ${navbarFontWeight} px-2 py-2`
-                  : `${navbarItemsDefault} ${navbarItemsSelectedOnHover} ${navbarFontWeight} px-2 py-2`
+                  ? `font-semibold px-2 py-2 text-secondary`
+                  : `font-semibold px-2 py-2 text-primary hover:text-secondary transition-colors`
               }
             >
               {data.name}
-            </Link>
-          </motion.div>
+            </Heading>
+          </Link>
 
           <nav>
             <ul className="hidden md:flex gap-5 lg:gap-10">
               {menuData.map((menuItem, key) => (
                 <li key={key}>
-                  <motion.div
-                    initial={{ scale: 1 }}
-                    whileHover={{ scale: zoomScale }}
-                    transition={{ duration: zoomDuration }}
-                  >
-                    <Link
-                      href={`${menuItem.path}`}
+                  <Link href={`${menuItem.path}`}>
+                    <Heading
+                      size="text-base"
                       className={
                         pathUrl === menuItem.path
-                          ? `${navbarFontWeight} ${navbarItemsSelected} px-2 py-2`
-                          : `${navbarFontWeight} ${navbarItemsDefault} ${navbarItemsSelectedOnHover} px-2 py-2`
+                          ? `font-semibold px-2 py-2 text-secondary`
+                          : `font-semibold px-2 py-2 text-primary hover:text-secondary transition-colors`
                       }
                     >
                       {menuItem.title}
-                    </Link>
-                  </motion.div>
+                    </Heading>
+                  </Link>
                 </li>
               ))}
             </ul>

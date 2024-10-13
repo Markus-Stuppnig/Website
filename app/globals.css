@@ -10,3 +10,15 @@
     background-color: var(--selected-text-color);
     color: white;
 }
+
+@layer utilities {
+    .zoom-on-hover-60 {
+        @apply transform transition-transform duration-60 hover:scale-105;
+    }
+    .zoom-on-hover-100 {
+        @apply transform transition-transform duration-100 hover:scale-105;
+    }
+    .zoom-on-hover-200 {
+        @apply transform transition-transform duration-200 hover:scale-105;
+    }
+}
