@@ -21,5 +21,4 @@ export function sendEmail(data: FormData) {
       console.log("Email failed to send");
       return false;
     });
-  return false;
 }

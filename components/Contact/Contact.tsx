@@ -7,9 +7,9 @@ import { FaPaperPlane } from "react-icons/fa6";
 import Heading from "@/components/miscellaneous/Heading";
 
 export type FormData = {
+  name: string;
   email: string;
   message: string;
-  rating: string;
 };
 
 export default function Contact() {
@@ -28,67 +28,91 @@ export default function Contact() {
 
   return (
     <div className="flex justify-center w-full h-screen items-center">
-      <div className="w-full flex justify-center">
-        <div className="flex flex-col justify-start w-11/12 max-w-[50rem] xl:max-w-[60rem]">
-          <div className="flex flex-col mb-[2rem] -mt-[10rem]">
-            <Heading color="secondary" className="mb-5">
-              Contact me
-            </Heading>
+      <div className="w-1/2 bg-white shadow-2xl rounded-[1.5rem] p-12">
+        <div className="flex flex-col mb-[2rem]">
+          <Heading color="secondary" className="mb-5">
+            Contact me
+          </Heading>
 
-            <h4 className="text-2xl text-black">
-              Please contact me directly at{" "}
-              <a className="underline" href="mailto:markus@stuppnig.net">
-                markus@stuppnig.net
-              </a>{" "}
-              or through this form.
-            </h4>
-          </div>
-
-          <form
-            className="flex flex-col w-full items-start justify-start"
-            onSubmit={handleSubmit(onSubmit)}
+          <Heading
+            color="black"
+            size="text-base md:text-basePlus"
+            weight="font-normal"
+            capitalize={false}
           >
-            <div className="flex w-full flex-row">
-              <div className="flex flex-col w-3/5 mr-[1rem] p-[2rem] bg-secondary rounded-3xl">
-                <input
-                  className={`h-14 px-4 text-xl rounded-3xl transition-all`}
-                  type="email"
-                  required
-                  maxLength={500}
-                  placeholder="Your email"
-                  {...register("email", { required: true })}
-                />
-                <textarea
-                  className={`h-52 mt-[2rem] text-xl rounded-3xl borderBlack p-4 transition-all`}
-                  placeholder="Your message"
-                  required
-                  maxLength={5000}
-                  {...register("message", { required: true })}
-                />
-              </div>
-              <div className="flex flex-col h-full w-2/5 p-[2rem] bg-secondary rounded-3xl">
-                <textarea
-                  className={`h-full w-full text-xl rounded-3xl borderBlack p-4 transition-all`}
-                  placeholder="Improvements for my website"
-                  required
-                  maxLength={5000}
-                  {...register("rating", { required: true })}
-                />
-                <button
-                  type="submit"
-                  className={`bg-primary mt-6 text-xl hover:bg-primary ease-in-out duration-300 group flex items-center justify-center gap-2 h-[3.031rem] w-[8.14rem] text-white rounded-full outline-none transition-all`}
-                  disabled={false}
-                >
-                  <div className="flex flex-row focus:scale-110 hover:scale-110 px-7 py-3">
-                    Submit{" "}
-                    <FaPaperPlane className="ml-3 text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />{" "}
-                  </div>
-                </button>
-              </div>
-            </div>
-          </form>
+            Please contact me directly at{" "}
+            <a className="underline" href="mailto:markus@stuppnig.net">
+              markus@stuppnig.net
+            </a>{" "}
+            or through this form.
+          </Heading>
         </div>
-        S
+        <form
+          className="flex flex-col w-full"
+          onSubmit={handleSubmit(onSubmit)}
+        >
+          <div className="mb-4">
+            <label
+              className="block text-sm font-medium mb-1"
+              htmlFor="last-name"
+            >
+              Name
+            </label>
+            <input
+              type="text"
+              id="last-name"
+              required
+              maxLength={50}
+              placeholder="Your name"
+              {...register("name", { required: true })}
+              className="border border-gray-300 rounded-md w-full p-2 focus:outline-none focus:ring focus:ring-blue-500"
+            />
+          </div>
+          <div className="mb-4">
+            <label
+              className="block text-sm font-medium mb-1"
+              htmlFor="email-input"
+            >
+              Email
+            </label>
+            <input
+              id="email-input"
+              type="email"
+              required
+              maxLength={50}
+              placeholder="Your email"
+              {...register("email", { required: true })}
+              className="border border-gray-300 rounded-md w-full p-2 focus:outline-none focus:ring focus:ring-blue-500"
+            />
+          </div>
+          <div className="mb-4">
+            <label
+              className="block text-sm font-medium mb-1"
+              htmlFor="message-input"
+            >
+              Message
+            </label>
+            <textarea
+              id="message-input"
+              required
+              maxLength={500}
+              placeholder="Your message"
+              {...register("message", { required: true })}
+              className="border border-gray-300 rounded-md w-full p-2 focus:outline-none focus:ring focus:ring-blue-500"
+              rows={4}
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            className={`bg-primary mt-6 text-base hover:bg-primary ease-in-out duration-300 group flex items-center justify-center gap-2 h-[3.031rem] w-[8.14rem] text-white rounded-full outline-none transition-all`}
+            disabled={false}
+          >
+            <div className="flex flex-row px-7 py-3">
+              Submit{" "}
+              <FaPaperPlane className="mt-2 ml-2 focus:scale-110 hover:scale-110 text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />{" "}
+            </div>
+          </button>
+        </form>
       </div>
     </div>
   );
