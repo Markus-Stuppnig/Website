@@ -2,9 +2,9 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { skillsData } from "./skillsData";
+import { skillsData } from "@/components/Skills/skillsData";
 import { useInView } from "react-intersection-observer";
-import SectionHeading from "../miscellaneous/SectionHeading";
+import Heading from "@/components/miscellaneous/Heading";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -32,7 +32,7 @@ export default function Skills() {
       className="flex flex-col items-center w-full mt-[5rem]"
     >
       <div className="flex flex-col items-center w-11/12 md:w-1/2 max-w-[53rem] text-center">
-        <SectionHeading>My skills</SectionHeading>
+        <Heading>My skills</Heading>
         <ul className="flex flex-wrap justify-center gap-2 text-md md:text-lg text-gray-800">
           {skillsData.map((skill, index) => (
             <motion.li

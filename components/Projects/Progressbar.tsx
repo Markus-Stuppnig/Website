@@ -43,12 +43,11 @@ export default function Progressbar({
       className={`h-[1.5rem] rounded-lg overflow-hidden w-full cursor-pointer zoom-on-hover-200`}
       style={{ backgroundColor: colorNot }}
     >
+      <span className="absolute ml-5">{number} %</span>
       <div
         className={`h-[1.5rem] flex items-center ${colorDone} transition-all duration-1000 ease-out`}
         style={{ width: inView ? `${number}%` : "0%" }}
-      >
-        <span className="ml-5">{number} %</span>
-      </div>
+      ></div>
     </div>
   );
 }
