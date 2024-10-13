@@ -12,8 +12,22 @@ export default function Journeys() {
     >
       <div className="mt-[4rem] mb-[14rem] flex justify-center items-center w-[300rem] h-[35rem] bg-secondary transform rotate-[3.5deg]">
         <div className="flex flex-col w-full text-white text-center transform -rotate-[3.5deg]">
-          <Heading className="font-semibold mb-5">Journeys</Heading>
-          <h4 className="text-2xl text-white">This page is about my life</h4>
+          <Heading
+            color="white"
+            size="text-xl md:text-3xl"
+            weight="font-semibold"
+            className="mb-5"
+          >
+            Journeys
+          </Heading>
+          <Heading
+            color="white"
+            size="text-base md:text-basePlus"
+            weight="font-medium"
+            capitalize={false}
+          >
+            This page is about my life
+          </Heading>
         </div>
       </div>
 

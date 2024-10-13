@@ -1,13 +1,13 @@
-import SectionHeading from "@/components/miscellaneous/SectionHeading";
+import Heading from "@/components/miscellaneous/Heading";
 
 export default function Home() {
   return (
     <main className="mt-[10rem]">
       <div className="grid grid-cols-5 mx-10">
         <div className="co-start-1 col-span-5 xl:col-start-2 xl:col-span-3 text-center text-2xl">
-          <SectionHeading className="font-semibold mb-5">
+          <Heading color="black" className="mb-5">
             Exchange Semester 2023 USA
-          </SectionHeading>
+          </Heading>
 
           <h3 className="mt-[5rem] mb-[3rem] text-4xl font-semibold">
             Decision

@@ -4,7 +4,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { sendEmail } from "@/utils/send-email";
 import { FaPaperPlane } from "react-icons/fa6";
-import SectionHeading from "../miscellaneous/SectionHeading";
+import Heading from "@/components/miscellaneous/Heading";
 
 export type FormData = {
   email: string;
@@ -31,9 +31,9 @@ export default function Contact() {
       <div className="w-full flex justify-center">
         <div className="flex flex-col justify-start w-11/12 max-w-[50rem] xl:max-w-[60rem]">
           <div className="flex flex-col mb-[2rem] -mt-[10rem]">
-            <SectionHeading className="text-secondary font-semibold mb-5">
+            <Heading color="secondary" className="mb-5">
               Contact me
-            </SectionHeading>
+            </Heading>
 
             <h4 className="text-2xl text-black">
               Please contact me directly at{" "}
