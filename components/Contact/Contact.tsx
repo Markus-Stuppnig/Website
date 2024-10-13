@@ -15,8 +15,8 @@ export type FormData = {
 export default function Contact() {
   const { register, handleSubmit, reset } = useForm<FormData>();
 
-  function onSubmit(data: FormData) {
-    if (sendEmail(data)) {
+  async function onSubmit(data: FormData) {
+    if (await sendEmail(data)) {
       alert("Form sent successfully!");
       reset();
     } else {
