@@ -1,5 +1,5 @@
 import SectionDivider from "@/components/miscellaneous/SectionDivider";
-import SectionHeading from "@/components/miscellaneous/SectionHeading";
+import Heading from "@/components/miscellaneous/Heading";
 
 export default function AbteilungssprecherPage() {
   return (
@@ -10,12 +10,22 @@ export default function AbteilungssprecherPage() {
       >
         <div className="mt-[4rem] mb-[8rem] flex justify-center items-center w-[300rem] h-[22rem] md:h-[30rem] bg-secondary transform rotate-[3.5deg]">
           <div className="flex flex-col w-full text-white text-center transform -rotate-[3.5deg]">
-            <SectionHeading className="text-[1.8rem] md:text-[3.5rem] font-semibold mb-5">
+            <Heading
+              color="white"
+              size="text-xl md:text-3xl"
+              weight="font-semibold"
+              className="mb-5"
+            >
               Abteilungssprecherwahl
-            </SectionHeading>
-            <SectionHeading className="text-[1.8rem] md:text-[3.5rem] font-semibold">
+            </Heading>
+            <Heading
+              color="white"
+              size="text-base md:text-basePlus"
+              weight="font-medium"
+              capitalize={false}
+            >
               STUPPNIG MARKUS
-            </SectionHeading>
+            </Heading>
           </div>
         </div>
 
@@ -46,11 +56,11 @@ export default function AbteilungssprecherPage() {
         <p className="italic text-lg">- Abraham Lincoln</p>
 
         <div className="flex flex-col h-full mx-[1rem] md:mx-[7rem]">
-          <SectionHeading className="text-black text-[2rem] md:text-[3rem] font-semibold mb-5 mt-10">
+          <Heading className="text-black text-[2rem] md:text-[3rem] font-semibold mb-5 mt-10">
             Wahlprogramm
-          </SectionHeading>
+          </Heading>
 
-          <p className="text-[1.2rem] md:text-[1.7rem] md:mt-[5rem]">
+          <p className="text-[1.2rem] md:text-[1.7rem]">
             IHR seid die, die entscheiden sollten wo es hingeht. Deswegen
             interessiert mich was EUCH wichtig ist und was EUCH am Herzen liegt.
           </p>
@@ -94,9 +104,9 @@ export default function AbteilungssprecherPage() {
             miteinbezogen werden!
           </p>
 
-          <SectionHeading className="text-black text-[2rem] md:text-[3rem] font-semibold mt-[3rem] md:mt-[6rem]">
+          <Heading className="text-black text-[2rem] md:text-[3rem] font-semibold mt-[3rem] md:mt-[6rem]">
             Über mich
-          </SectionHeading>
+          </Heading>
           <p className="text-[1.2rem] md:text-[1.7rem] mt-[1rem] mb-[3rem] md:mb-[7rem]">
             Ich möchte dieser Schule was zurückgeben, nachdem der Herr Professor
             Koppensteiner, der Herr Professor Brein, aber auch zahlreiche andere
