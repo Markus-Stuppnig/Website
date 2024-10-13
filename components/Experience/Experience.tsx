@@ -20,7 +20,7 @@ export default function Experience() {
       >
         My experience
       </Heading>
-      <div className="flex justify-center w-full">
+      <div className="hidden xl:flex justify-center w-full">
         <span className="relative flex h-4 w-4">
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
           <span className="relative inline-flex rounded-full h-4 w-4 bg-primary"></span>
@@ -55,7 +55,7 @@ export default function Experience() {
           </React.Fragment>
         ))}
       </VerticalTimeline>
-      <div className="flex justify-center w-full">
+      <div className="hidden xl:flex justify-center w-full">
         <span className="relative flex h-4 w-4">
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
           <span className="relative inline-flex rounded-full h-4 w-4 bg-primary"></span>

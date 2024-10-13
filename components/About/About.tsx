@@ -9,27 +9,28 @@ export default function About() {
   return (
     <section
       id="about"
-      className="flex justify-center w-full md:h-screen items-center mt-[5rem] xl:mt-0"
+      className="flex justify-center w-full md:h-screen items-center"
     >
-      <div className="flex flex-col xl:flex-row justify-center items-center h-[40rem] w-full">
+      <div className="flex flex-col md:flex-row items-center w-full">
         <a
           href="https://en.wikipedia.org/wiki/Carpe_diem"
           target="_blank"
-          className="flex w-1/2 items-center justify-center ml-[10vh] animate-slidein"
+          className="flex w-full md:w-1/2 items-center justify-center md:ml-[10vw] animate-slidein"
         >
           <Image
             src={data.slogan_img}
             alt="The Future is Cloud Text"
-            width={data.slogan_img_size}
-            height={100}
+            width={1000}
+            height={1000}
+            priority={true}
             className="zoom-on-hover-200"
           />
         </a>
-        <div className="flex flex-col w-1/2 text-center mr-[10vh]">
+        <div className="flex flex-col w-4/5 md:w-1/2 md:text-center md:mr-[10vh]">
           <Heading
             color="secondary"
             size="text-xl md:text-3xl"
-            className="mt-[10rem] mb-5"
+            className="sm:mt-[5rem] mb-5"
           >
             {data.name}
           </Heading>

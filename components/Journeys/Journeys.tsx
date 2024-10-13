@@ -1,7 +1,7 @@
 import React from "react";
 import { journeysData } from "./journeysData";
 import JourneySection from "@/components/Journeys/JourneySection";
-import SectionHeading from "@/components/miscellaneous/SectionHeading";
+import Heading from "@/components/miscellaneous/Heading";
 import SectionDivider from "@/components/miscellaneous/SectionDivider";
 
 export default function Journeys() {
@@ -12,9 +12,7 @@ export default function Journeys() {
     >
       <div className="mt-[4rem] mb-[14rem] flex justify-center items-center w-[300rem] h-[35rem] bg-secondary transform rotate-[3.5deg]">
         <div className="flex flex-col w-full text-white text-center transform -rotate-[3.5deg]">
-          <SectionHeading className="font-semibold mb-5">
-            Journeys
-          </SectionHeading>
+          <Heading className="font-semibold mb-5">Journeys</Heading>
           <h4 className="text-2xl text-white">This page is about my life</h4>
         </div>
       </div>
