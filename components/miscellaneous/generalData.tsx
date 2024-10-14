@@ -11,11 +11,16 @@ export const data = {
   callForAction1: "Get in touch",
 
   title1: "Habits",
+  link1: "/journeys/growth#mindset",
   text1: "Motivation is what gets you started. Habit is what keeps you going.",
+
   title2: "Books",
+  link2: "/journeys/growth#knowledge",
   text2:
     "The man who does not read has no advantage over the man who cannot read.",
+
   title3: "Nutrition",
+  link3: "/journeys/growth#nutrition",
   text3: "Let food be thy medicine and medicine be thy food.",
 
   // title1: "Self Improvement",

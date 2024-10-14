@@ -131,9 +131,19 @@ const config: Config = {
             transform: "translateY(0)",
           },
         },
+        moveleft: {
+          from: { transform: "translateX(100%)" },
+          to: { transform: "translateX(0)" },
+        },
+        moveright: {
+          from: { transform: "translateX(-100%)" },
+          to: { transform: "translateX(0)" },
+        },
       },
       animation: {
         slidein: "slidein 800ms ease-in-out",
+        moveleft: "moveleft 800ms ease-out",
+        moveright: "moveright 800ms ease-out",
       },
     },
   },

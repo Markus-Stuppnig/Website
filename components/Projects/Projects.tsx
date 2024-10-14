@@ -7,12 +7,13 @@ export default function Projects() {
   return (
     <section id="projects" className="mt-[5rem]">
       <div className="grid grid-cols-12 h-[30rem]">
-        <div className="col-span-12 md:col-start-4 md:col-span-9 bg-secondary py-[10rem] md:rounded-l-3xl grid grid-cols-12 zoom-on-hover-small">
+        <div className="animate-moveleft col-span-12 md:col-start-4 md:col-span-9 bg-secondary py-[10rem] md:rounded-l-3xl grid grid-cols-12 zoom-on-hover-small">
           <div className="text-center col-start-2 col-span-10 md:col-start-3 md:col-span-5 flex flex-col items-center justify-center">
             <Heading
               color="white"
               size="text-xl md:text-3xl"
               weight="font-semibold"
+              animate=""
               className="mb-5"
             >
               Projects
@@ -21,6 +22,7 @@ export default function Projects() {
               color="white"
               size="text-base md:text-basePlus"
               weight="font-medium"
+              animate=""
               capitalize={false}
             >
               Here are some of my projects

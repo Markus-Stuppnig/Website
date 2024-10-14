@@ -40,7 +40,7 @@ export default function Progressbar({
   return (
     <div
       ref={progressBarRef}
-      className={`h-[1.5rem] rounded-lg overflow-hidden w-full cursor-pointer zoom-on-hover-200`}
+      className={`h-[1.5rem] rounded-lg overflow-hidden w-full cursor-pointer zoom-on-hover-medium`}
       style={{ backgroundColor: colorNot }}
     >
       <span className="absolute ml-5">{number} %</span>

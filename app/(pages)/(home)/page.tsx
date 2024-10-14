@@ -13,7 +13,7 @@ export default function Home() {
       <Experience />
       <SectionDivider height="h-[5rem] md:h-[10rem]" />
       <Recommendations />
-      <SectionDivider height="h-[5rem] md:h-[20rem]" />
+      <SectionDivider height="h-[5rem] md:h-[10rem]" />
     </main>
   );
 }

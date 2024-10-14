@@ -19,11 +19,13 @@ export default function Footer() {
     <>
       <footer className="pt-7 pb-7 md:pt-10 md:pb-8 px-4 text-gray-500 w-full flex justify-center shadow-2xl">
         <div className="flex flex-row items-center text-center gap-x-3 lg:w-2/3 text-xs">
-          <div className="w-1/3">Wexstraße 19-23, 1200 Vienna</div>
-          <div className="w-1/3">
+          <div className="w-1/3 animate-slidein">
+            Wexstraße 19-23, 1200 Vienna
+          </div>
+          <div className="w-1/3 animate-slidein">
             &copy; {currentYear} Markus Stuppnig. All rights reserved.
           </div>
-          <div className="w-1/3">
+          <div className="w-1/3 animate-slidein">
             <Link href="mailto:markus@stuppnig.net" className="underline w-1/3">
               markus@stuppnig.net
             </Link>

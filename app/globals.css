@@ -15,6 +15,9 @@
     .zoom-on-hover-small {
         @apply transform transition-transform duration-200 hover:scale-[1.01];
     }
+    .zoom-on-hover-medium {
+        @apply transform transition-transform duration-200 hover:scale-[1.025];
+    }
     .zoom-on-hover-60 {
         @apply transform transition-transform duration-60 hover:scale-105;
     }
