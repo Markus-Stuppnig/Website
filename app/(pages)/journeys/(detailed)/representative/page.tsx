@@ -16,7 +16,7 @@ export default function AbteilungssprecherPage() {
               weight="font-semibold"
               className="mb-5"
             >
-              Abteilungssprecherwahl
+              Abteilungssprecher HIT
             </Heading>
             <Heading
               color="white"
@@ -56,63 +56,45 @@ export default function AbteilungssprecherPage() {
         <p className="italic text-lg">- Abraham Lincoln</p>
 
         <div className="flex flex-col h-full mx-[1rem] md:mx-[7rem]">
-          <Heading className="text-black text-[2rem] md:text-[3rem] font-semibold mb-5 mt-10">
-            Wahlprogramm
+          <Heading
+            zoom={false}
+            className="text-black text-[2rem] md:text-[3rem] font-semibold mt-[3rem] md:mt-[6rem]"
+          >
+            Aktueller Stand
           </Heading>
-
-          <p className="text-[1.2rem] md:text-[1.7rem]">
-            IHR seid die, die entscheiden sollten wo es hingeht. Deswegen
-            interessiert mich was EUCH wichtig ist und was EUCH am Herzen liegt.
+          <p className="text-[1.2rem] md:text-[1.7rem] mt-[1rem]">
+            Am Montag, dem 30. September haben wir ein Klassensprechertreffen
+            angesetzt, bei dem Franz Puerto und ich eure Meinungen und Ideen
+            hören konnten.
           </p>
-          <br />
-
-          <p className="text-[1.2rem] md:text-[1.7rem] md:mt-[2.5rem]">
-            80% der Wahlversprechen der letzten Jahre wurden nicht eingehalten.
-            Ich habe nur ein Versprechen: Ein Abstimmungssystem, mit dem ich mir
-            EURE Meinungen einholen kann, da IHR es seid, die das Schiff am
-            Laufen halten.
-          </p>
-          <br />
-
-          <p className="text-[1.2rem] md:text-[1.7rem] md:mt-[2.5rem]">
-            Hier sind einige Ideen über die abgestimmt werden kann:
-          </p>
-          <br />
-
-          <ul className="list-disc text-[1.2rem] md:text-[1.7rem] ml-[2rem] md:ml-[3rem]">
-            <li>Getränkeautomat vom 8. Stock in den 9. Stock verschieben</li>
-            <li>
-              3. Klässler können mit einem Buddy aus der 5. einen Tag die
-              Spezialiserung schnuppern
-            </li>
-            <li>
-              Bessere Klassenräume (Ausstattung: Beamer, Steckdosen,
-              Verlängerungskabel)
-            </li>
-            <li>
-              Überarbeitung der Aula im 9. und 11. Stock (Spinde, Möbel,
-              Steckdosen, etc.)
-            </li>
-            <li>Mehr Freiheit bei der Organisation des Meet & Greet</li>
-            <li>Organisation von Events (Kino, Ausflüge, etc.)</li>
-            <li>Lehrer-Awards bei den Spirit-of-HIT days!</li>
-            <li>Organisation eines Erste-Hilfe Kurs</li>
-          </ul>
-
-          <p className="text-[1.2rem] md:text-[1.7rem] md:mt-[2.5rem]">
-            Jeder von euch soll in die Entscheidungen der Abteilung
-            miteinbezogen werden!
+          <p className="text-[1.2rem] md:text-[1.7rem] mt-[1rem]">
+            Direkt darauf haben wir diese beim Abteilungsvorstand, dem Herrn
+            Professor Koppensteiner, eingebracht. Aktuell warten wir noch auf
+            den Zugriff auf eine Shared Mailbox, sodass wir E-Mails an die
+            gesamte Abteilung senden können. Das Protokoll habt ihr hier zum{" "}
+            <a
+              href="/protokoll-03.10.2024-Koppensteiner.pdf"
+              className="text-primary underline"
+              download
+            >
+              download
+            </a>
           </p>
 
-          <Heading className="text-black text-[2rem] md:text-[3rem] font-semibold mt-[3rem] md:mt-[6rem]">
+          <Heading
+            zoom={false}
+            className="text-black text-[2rem] md:text-[3rem] font-semibold mt-[3rem] md:mt-[6rem]"
+          >
             Über mich
           </Heading>
           <p className="text-[1.2rem] md:text-[1.7rem] mt-[1rem] mb-[3rem] md:mb-[7rem]">
-            Ich möchte dieser Schule was zurückgeben, nachdem der Herr Professor
+            Ich bin Markus, und habe das vergnügen, als Abteilungssprecher für
+            die HIT gewählt worden zu sein. Nachdem der Herr Professor
             Koppensteiner, der Herr Professor Brein, aber auch zahlreiche andere
-            Personen sich für mich und mein Auslandssemester eingesetzt haben.
-            Mit dem Amt als Abteilungssprecher möchte ich mich dafür bedanken
-            und euch auch eure Träume und Wünsche erfüllen.
+            Personen sich für mich und mein Auslandssemester eingesetzt haben,
+            möchte ich dem TGM etwas zurückgeben. Mit dem Amt als
+            Abteilungssprecher bedanke ich mich für die Unterstützung indem ich
+            mich setze für EUER Interesse einsetze.
           </p>
         </div>
       </section>

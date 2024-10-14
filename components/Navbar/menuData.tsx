@@ -12,9 +12,9 @@ const menuData: Menu[] = [
     path: "/journeys",
   },
   {
-    title: "Department Representative",
+    title: "Hobbies",
     newTab: false,
-    path: "/representative",
+    path: "/hobbies",
   },
 ];
 

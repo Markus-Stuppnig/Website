@@ -26,7 +26,8 @@ export const projectsData: Project[] = [
       "We are developing the Digital Stroke Doctor App as part of our diploma project.<br /><br />The app revolutionizes the initial treatment of strokes by allowing rescue personnel to communicate directly with an AI that assists with immediate diagnosis and action recommendations.",
     startDate: new Date("2024-09-0T00:00:00.000Z"),
     latestVersion: "Alpha 0.0.1",
-    githublink: "",
+    githublink:
+      "https://github.com/Markus-Stuppnig/Digital_Stroke_Doctor_Website",
     weblink: "",
     pypilink: "",
     progress: 15,
