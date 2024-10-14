@@ -38,11 +38,16 @@ export default function ProjectCard({
                       __html: project.description,
                     }}
                   />
-                  <Progressbar
-                    number={project.progress}
-                    colorDone={"bg-primary"}
-                    colorNot={"#fff"}
-                  />
+                  <div className="flex flex-row">
+                    <Progressbar
+                      number={project.progress}
+                      colorDone={"bg-primary"}
+                      colorNot={"#fff"}
+                    />
+                    <p className="font-medium text-basePlus ml-4 mt-[-3px]">
+                      {project.latestVersion}
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -51,7 +56,7 @@ export default function ProjectCard({
                 <Link
                   href={project.weblink}
                   target="_blank"
-                  className="bg-white rounded-full p-1"
+                  className="bg-white rounded-full p-1 zoom-on-hover-200"
                 >
                   <FaGlobe size={30} />
                 </Link>
@@ -60,7 +65,7 @@ export default function ProjectCard({
                 <Link
                   href={project.githublink}
                   target="_blank"
-                  className="bg-white rounded-full p-1"
+                  className="bg-white rounded-full p-1 zoom-on-hover-200"
                 >
                   <FaGithub size={30} />
                 </Link>
@@ -69,7 +74,7 @@ export default function ProjectCard({
                 <Link
                   href={project.pypilink}
                   target="_blank"
-                  className="bg-white rounded-full p-1"
+                  className="bg-white rounded-full p-1 zoom-on-hover-200"
                 >
                   <FaPython size={30} />
                 </Link>
@@ -99,11 +104,16 @@ export default function ProjectCard({
                       __html: project.description,
                     }}
                   />
-                  <Progressbar
-                    number={project.progress}
-                    colorDone={"bg-primary"}
-                    colorNot={"#fff"}
-                  />
+                  <div className="flex flex-row">
+                    <Progressbar
+                      number={project.progress}
+                      colorDone={"bg-primary"}
+                      colorNot={"#fff"}
+                    />
+                    <p className="font-medium text-basePlus ml-4 mt-[-3px]">
+                      {project.latestVersion}
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -112,7 +122,7 @@ export default function ProjectCard({
                 <Link
                   href={project.weblink}
                   target="_blank"
-                  className="bg-white rounded-full p-1"
+                  className="bg-white rounded-full p-1 zoom-on-hover-200"
                 >
                   <FaGlobe size={30} />
                 </Link>
@@ -121,7 +131,7 @@ export default function ProjectCard({
                 <Link
                   href={project.githublink}
                   target="_blank"
-                  className="bg-white rounded-full p-1"
+                  className="bg-white rounded-full p-1 zoom-on-hover-200"
                 >
                   <FaGithub size={30} />
                 </Link>
@@ -130,7 +140,7 @@ export default function ProjectCard({
                 <Link
                   href={project.pypilink}
                   target="_blank"
-                  className="bg-white rounded-full p-1"
+                  className="bg-white rounded-full p-1 zoom-on-hover-200"
                 >
                   <FaPython size={30} />
                 </Link>

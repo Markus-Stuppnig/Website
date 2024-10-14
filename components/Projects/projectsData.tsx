@@ -1,7 +1,6 @@
 export interface Project {
   title: string;
   description: string;
-  projectDone: boolean;
   startDate: Date;
   endDate?: Date;
   latestVersion?: string;
@@ -22,10 +21,9 @@ export interface Contributor {
 
 export const projectsData: Project[] = [
   {
-    title: "Digitaler Schlaganfallnotarzt",
+    title: "Digital Stroke Doctor",
     description:
-      "The Digital Stroke Doctor App revolutionizes the initial treatment of strokes: rescue personnel communicate directly with an AI that assists with immediate diagnosis and action recommendations. This allows for rapid assessment of the likelihood of a stroke and saves lives—faster, more efficiently, and smarter.",
-    projectDone: false,
+      "We are developing the Digital Stroke Doctor App as part of our diploma project.<br /><br />The app revolutionizes the initial treatment of strokes by allowing rescue personnel to communicate directly with an AI that assists with immediate diagnosis and action recommendations.",
     startDate: new Date("2024-09-0T00:00:00.000Z"),
     latestVersion: "Alpha 0.0.1",
     githublink: "",
@@ -36,10 +34,9 @@ export const projectsData: Project[] = [
   {
     title: "VSA",
     description:
-      "The market sees a steady rise in digital products and services. Personal digital possessions like social media accounts and crypto wallets risk being lost upon the user's demise. Though some platforms offer asset transfer solutions, they're often product-specific. This project aims to provide a universal solution for managing digital assets, addressing this issue comprehensively.<br /><br />In my dual role as the project leader and developer, I lead the development process, organize stakeholder meetings, and contribute to feature implementation.",
-    projectDone: false,
+      "Personal digital possessions like social media accounts and crypto wallets risk being lost upon the user's demise. This project aims to help people manage and pass on their digital legacy.<br /><br /> In my dual role as the project leader and developer, I lead the development process, organize stakeholder meetings, and contribute to feature implementation.",
     startDate: new Date("2023-11-0T00:00:00.000Z"),
-    latestVersion: "0.1",
+    latestVersion: "v0.8",
     githublink: "",
     weblink: "",
     pypilink: "",
@@ -48,9 +45,8 @@ export const projectsData: Project[] = [
   {
     title: "Okamaya",
     description: "TODO",
-    projectDone: true,
     startDate: new Date("2023-01-0T00:00:00.000Z"),
-    latestVersion: "0.0.1",
+    latestVersion: "TODO",
     githublink: "",
     weblink: "",
     pypilink: "",
@@ -60,9 +56,8 @@ export const projectsData: Project[] = [
     title: "Schengen-Borders-Information-Scraper",
     description:
       "This Python script scrapes information about temporary reintroduction of border control in the Schengen Area from the <a href='https://home-affairs.ec.europa.eu/policies/schengen-borders-and-visa/schengen-area/temporary-reintroduction-border-control_en' target='_blank'>European Commission's website</a>.",
-    projectDone: true,
     startDate: new Date("2023-01-0T00:00:00.000Z"),
-    latestVersion: "0.0.1",
+    latestVersion: "v0.0.1",
     githublink:
       "https://github.com/Markus-Stuppnig/Schengen-Borders-Information-Scraper",
     weblink:
@@ -73,10 +68,9 @@ export const projectsData: Project[] = [
   {
     title: "Phanto",
     description:
-      "Phanto is a utility that specializes in UAC bypass and privilege escalation, enabling it to bypass User Account Control on Windows 10 and 11 systems and attain Administrator privileges. In the absence of administrative privileges, Phanto.exe attempts to elevate its own permissions by attempting to execute itself using the administrator token and gain administrator privileges, all without triggering UAC prompts. This type of attack is called a UAC bypass.",
-    projectDone: false,
+      "Phanto is a utility that specializes in UAC bypass and privilege escalation, enabling it to bypass User Account Control on Windows 10 and 11 systems and attain Administrator privileges.",
     startDate: new Date("2023-01-0T00:00:00.000Z"),
-    latestVersion: "1.0",
+    latestVersion: "Debug 1.0",
     githublink: "https://github.com/Markus-Stuppnig/Phanto",
     weblink: "",
     pypilink: "",
@@ -86,9 +80,8 @@ export const projectsData: Project[] = [
     title: "FileIOPlus",
     description:
       "FileIOPlus is a Java library designed to simplify file input/output operations. It provides convenient methods and mechanism for setting, storing and retrieving key-value pairs within a text file.",
-    projectDone: true,
     startDate: new Date("2020-12-0T00:00:00.000Z"),
-    latestVersion: "1.0",
+    latestVersion: "v1.0",
     githublink: "https://github.com/Markus-Stuppnig/FileIOPlus",
     weblink: "",
     pypilink: "",
