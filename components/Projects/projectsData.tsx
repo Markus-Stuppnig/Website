@@ -5,7 +5,9 @@ export interface Project {
   startDate: Date;
   endDate?: Date;
   latestVersion?: string;
-  link: string;
+  githublink: string;
+  weblink: string;
+  pypilink: string;
   imagePath?: string;
   contributers?: Contributor[];
   progress: number;
@@ -26,7 +28,9 @@ export const projectsData: Project[] = [
     projectDone: false,
     startDate: new Date("2024-09-0T00:00:00.000Z"),
     latestVersion: "Alpha 0.0.1",
-    link: "",
+    githublink: "",
+    weblink: "",
+    pypilink: "",
     progress: 15,
   },
   {
@@ -36,7 +40,9 @@ export const projectsData: Project[] = [
     projectDone: false,
     startDate: new Date("2023-11-0T00:00:00.000Z"),
     latestVersion: "0.1",
-    link: "",
+    githublink: "",
+    weblink: "",
+    pypilink: "",
     progress: 90,
   },
   {
@@ -45,7 +51,9 @@ export const projectsData: Project[] = [
     projectDone: true,
     startDate: new Date("2023-01-0T00:00:00.000Z"),
     latestVersion: "0.0.1",
-    link: "https://pypi.org/project/Schengen-Borders-Information-Scraper/",
+    githublink: "",
+    weblink: "",
+    pypilink: "",
     progress: 100,
   },
   {
@@ -55,7 +63,10 @@ export const projectsData: Project[] = [
     projectDone: true,
     startDate: new Date("2023-01-0T00:00:00.000Z"),
     latestVersion: "0.0.1",
-    link: "https://pypi.org/project/Schengen-Borders-Information-Scraper/",
+    githublink:
+      "https://github.com/Markus-Stuppnig/Schengen-Borders-Information-Scraper",
+    weblink: "",
+    pypilink: "https://pypi.org/project/Schengen-Borders-Information-Scraper/",
     progress: 100,
   },
   {
@@ -65,7 +76,9 @@ export const projectsData: Project[] = [
     projectDone: false,
     startDate: new Date("2023-01-0T00:00:00.000Z"),
     latestVersion: "1.0",
-    link: "https://github.com/Markus-Stuppnig/Phanto",
+    githublink: "https://github.com/Markus-Stuppnig/Phanto",
+    weblink: "",
+    pypilink: "",
     progress: 40,
   },
   {
@@ -75,7 +88,9 @@ export const projectsData: Project[] = [
     projectDone: true,
     startDate: new Date("2020-12-0T00:00:00.000Z"),
     latestVersion: "1.0",
-    link: "https://github.com/Markus-Stuppnig/FileIOPlus",
+    githublink: "https://github.com/Markus-Stuppnig/FileIOPlus",
+    weblink: "",
+    pypilink: "",
     progress: 100,
   },
 ] as const;
