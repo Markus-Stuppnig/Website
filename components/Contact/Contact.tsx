@@ -41,11 +41,7 @@ export default function Contact() {
             capitalize={false}
             zoom={false}
           >
-            Please contact me directly at{" "}
-            <a className="underline" href="mailto:markus@stuppnig.net">
-              markus@stuppnig.net
-            </a>{" "}
-            or through this form.
+            Please contact me directly through this form.
           </Heading>
         </div>
         <form

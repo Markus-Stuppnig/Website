@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
+import { FaGithub, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   const [currentYear, setCurrentYear] = useState("");
@@ -25,9 +26,12 @@ export default function Footer() {
           <div className="w-1/3 animate-slidein">
             &copy; {currentYear} Markus Stuppnig. All rights reserved.
           </div>
-          <div className="w-1/3 animate-slidein">
-            <Link href="mailto:markus@stuppnig.net" className="underline w-1/3">
-              markus@stuppnig.net
+          <div className="w-1/3 animate-slidein flex flex-row justify-center space-x-3">
+            <Link href="https://instagram.com/markusstuppnig" target="_blank">
+              <FaInstagram size={24} />
+            </Link>
+            <Link href="https://github.com/Markus-Stuppnig" target="_blank">
+              <FaGithub size={24} />
             </Link>
           </div>
         </div>
