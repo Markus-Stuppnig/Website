@@ -3,6 +3,7 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { FaGithub, FaInstagram } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa6";
 
 export default function Footer() {
   const [currentYear, setCurrentYear] = useState("");
@@ -32,6 +33,12 @@ export default function Footer() {
             </Link>
             <Link href="https://github.com/Markus-Stuppnig" target="_blank">
               <FaGithub size={24} />
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/markus-stuppnig/"
+              target="_blank"
+            >
+              <FaLinkedin size={24} />
             </Link>
           </div>
         </div>

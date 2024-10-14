@@ -59,13 +59,14 @@ export const projectsData: Project[] = [
   {
     title: "Schengen-Borders-Information-Scraper",
     description:
-      "This Python script scrapes information about temporary reintroduction of border control in the Schengen Area from the <a href='https://home-affairs.ec.europa.eu/policies/schengen-borders-and-visa/schengen-area/temporary-reintroduction-border-control_en' target='_blank'>European Commission's website</a>. You can explore this project by visiting the following URL on the official PyPI website: <a href='https://pypi.org/project/Schengen-Borders-Information-Scraper/' target='_blank'>Schengen Borders Information Scraper on PyPI</a>",
+      "This Python script scrapes information about temporary reintroduction of border control in the Schengen Area from the <a href='https://home-affairs.ec.europa.eu/policies/schengen-borders-and-visa/schengen-area/temporary-reintroduction-border-control_en' target='_blank'>European Commission's website</a>.",
     projectDone: true,
     startDate: new Date("2023-01-0T00:00:00.000Z"),
     latestVersion: "0.0.1",
     githublink:
       "https://github.com/Markus-Stuppnig/Schengen-Borders-Information-Scraper",
-    weblink: "",
+    weblink:
+      "https://home-affairs.ec.europa.eu/policies/schengen-borders-and-visa/schengen-area/temporary-reintroduction-border-control_en",
     pypilink: "https://pypi.org/project/Schengen-Borders-Information-Scraper/",
     progress: 100,
   },
