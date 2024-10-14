@@ -2,7 +2,7 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap, LuDatabase, LuCode } from "react-icons/lu";
 import { HiOutlineDesktopComputer } from "react-icons/hi";
-import { FaCodeBranch } from "react-icons/fa6";
+import { FaCodeBranch, FaUserDoctor, FaPencil } from "react-icons/fa6";
 
 export interface Experience {
   title: string;
@@ -10,65 +10,92 @@ export interface Experience {
   description: string[];
   icon: JSX.Element;
   date: string;
+  education: boolean;
 }
 
 export const experiencesData: Experience[] = [
   {
+    title: "Technologisches Gewerbemuseum",
+    location: "Department Representative - 550 students - Vienna",
+    description: [
+      "Within the Computer Science branch I was elected as the Department Representative for over 550 students.",
+      "In this role, I represent my peers and help organize events and initiatives to enhance our school experience.",
+    ],
+    icon: React.createElement(FaPencil),
+    date: "September 2024 - present",
+    education: false,
+  },
+  {
+    title: "Digital Stroke Doctor Project Manager",
+    location: "Diploma Project - Vienna",
+    description: [
+      "I'm developing the Digital Stroke Doctor App with a team of four for my diploma.",
+      "The app aids rescue personnel in the initial treatment of strokes by using AI to provide immediate diagnosis and action recommendations.",
+    ],
+    icon: React.createElement(FaUserDoctor),
+    date: "September 2024 - present",
+    education: false,
+  },
+  {
     title: "Giesecke+Devrient Software Architect",
     location: "Summer Internship - Dubai, United Arabic Emirates",
     description: [
-      "Developing an unbeatable competitor analysis platform for market intelligence. Retrieving data from competitors websites and digital identity content creators on social media and saving it to a database.",
-      "This data contains business strategies, prices, products and features and will be fed into an LLM which summarizes and analyzes it as well as recommending ways to improve sales. Finally, a report will be sent to the C-Levels via mail automatically every month.",
+      "Developing a competitor analysis platform for market intelligence.",
+      "Retrieving competitor data (business strategies, prices, products and features) from social media and analyzing it using AI.",
     ],
     icon: React.createElement(FaCodeBranch),
     date: "July 2024 - August 2024",
+    education: false,
   },
   {
-    title: "Technologisches Gerwerbemuseum",
-    location: "ISCED 5 - Data Science - Vienna, Austria",
+    title: "VSA Project Manager",
+    location: "E-Commerce Project - Vienna",
     description: [
-      "Having returned from america and completed my summer internship, I now find myself back in 12th grade in Vienna. I have decided to pursue the Data Science track within the system technology branch, as I find it the most interesting.",
+      "As a team of six, we developed a platform that helps people manage and pass on their digital legacy.",
     ],
     icon: React.createElement(LuDatabase),
     date: "September 2023 - present",
+    education: false,
   },
   {
     title: "Siemens Software Engineer",
-    location: "Summer Internship - Vienna, Austria",
+    location: "Summer Internship - Vienna",
     description: [
       "Adding a SaaS feature to import offline SimBench powergrids into an internal powergrid of a Network Analysis Tool for Supervisory Control and Data Acquisition (SCADA).",
       "Visualizing powerflow and state estimation data with an Angular WebServer that sends requests to a Java Backend via Spring Boot on the same machine for offline usage.",
     ],
     icon: React.createElement(LuCode),
     date: "July 2023 - August 2023",
+    education: false,
   },
   {
     title: "Washington Community High School",
     location: "ISCED 3 - Exchange Semester - Washington, Illinois",
     description: [
-      "Grateful for the opportunity to experience American education during my exchange semester in Illinois.",
-      "I am a proud recipient of an Honorary High School Diploma from Washington Community High School, acknowledging the completion of graduation requirements. This semester has taught me so much and I truly value the time I spent there and the friends I made.",
+      "Grateful to experience American education during my exchange semester in Illinois where I received an Honorary High School Diploma, acknowledging the completion of graduation requirements.",
     ],
     icon: React.createElement(CgWorkAlt),
     date: "December 2022 - May 2023",
+    education: true,
   },
   {
     title: "Technologisches Gerwerbemuseum",
-    location: "ISCED 5 - Information Technology - Vienna, Austria",
+    location: "ISCED 5 - Technical College - Vienna",
     description: [
-      "I am very proud to consider myself a student of this technologically advanced school. My interest in technology dates back to my early childhood, and this school has truly allowed me to blossom.",
-      "As an active member of the students parliament, my goal is to improve cooperation among all 2200 students and create a better study environment for everyone.",
+      "I decided to study Computer Science at TGM, one of Vienna's largest and most prestigious technical schools with nearly 3,000 students, where I focus on Data Science.",
     ],
     icon: React.createElement(HiOutlineDesktopComputer),
-    date: "September 2020 - December 2022",
+    date: "September 2020 - present",
+    education: true,
   },
   {
     title: "Polgargymnasium",
-    location: "ISCED 2 - Bundes Real Gymnasium - Vienna, Austria",
+    location: "ISCED 2 - Bundesrealgymnasium (BRG) - Vienna",
     description: [
-      "Due to my huge interest in mathematics, I decided to pursue my education in the mathematics oriented track (Realgymnasium).",
+      "Due to my huge interest in mathematics, I decided to pursue my education in the mathematics oriented track.",
     ],
     icon: React.createElement(LuGraduationCap),
     date: "September 2016 - June 2020",
+    education: true,
   },
 ] as const;

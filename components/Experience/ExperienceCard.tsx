@@ -14,7 +14,11 @@ export default function ExperienceCard({
     <div>
       <Heading
         zoom={false}
-        className="!text-primary !font-semibold !text-base md:!text-basePlus !mb-2"
+        className={
+          experience.education
+            ? "!text-secondary !font-semibold !text-base md:!text-basePlus !mb-2"
+            : "!text-primary !font-semibold !text-base md:!text-basePlus !mb-2"
+        }
       >
         {experience.title}
       </Heading>
