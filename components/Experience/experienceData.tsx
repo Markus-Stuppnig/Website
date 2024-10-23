@@ -16,9 +16,9 @@ export interface Experience {
 export const experiencesData: Experience[] = [
   {
     title: "Technologisches Gewerbemuseum",
-    location: "Department Representative - 550 students - Vienna",
+    location: "Student Representative HIT - 556 students - Vienna",
     description: [
-      "Within the Computer Science branch I was elected as the Department Representative for over 550 students.",
+      "Within the Computer Science branch I was elected as the Department Representative for 556 students.",
       "In this role, I represent my peers and help organize events and initiatives to enhance our school experience.",
     ],
     icon: React.createElement(FaPencil),
