@@ -45,9 +45,10 @@ export const projectsData: Project[] = [
   },
   {
     title: "Okamaya",
-    description: "TODO",
+    description:
+      "Okamaya is a Minecraft PvP client that is designed to provide players with a competitive edge in PvP combat. The client includes a variety of features such as auto-clickers, auto-tool-mod, and other tools to help players improve their performance in the game.",
     startDate: new Date("2023-01-0T00:00:00.000Z"),
-    latestVersion: "TODO",
+    latestVersion: "v1.83",
     githublink: "",
     weblink: "",
     pypilink: "",
