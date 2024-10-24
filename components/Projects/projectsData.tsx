@@ -21,14 +21,13 @@ export interface Contributor {
 
 export const projectsData: Project[] = [
   {
-    title: "Digital Stroke Doctor",
+    title: "Digital Emergency Medicine Physician",
     description:
-      "We are developing the Digital Stroke Doctor App as part of our diploma project.<br /><br />The app revolutionizes the initial treatment of strokes by allowing rescue personnel to communicate directly with an AI that assists with immediate diagnosis and action recommendations.",
+      "We are developing the DIEMP App as part of our diploma project.<br /><br />DIEMP revolutionizes the initial treatment of strokes by allowing rescue personnel to communicate directly with an AI that assists with immediate diagnosis and action recommendations.",
     startDate: new Date("2024-09-0T00:00:00.000Z"),
     latestVersion: "Alpha 0.0.1",
-    githublink:
-      "https://github.com/Markus-Stuppnig/Digital_Stroke_Doctor_Website",
-    weblink: "",
+    githublink: "",
+    weblink: "https://www.diemp.org",
     pypilink: "",
     progress: 15,
   },
